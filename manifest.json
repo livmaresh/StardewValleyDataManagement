@@ -1,0 +1,10 @@
+{
+    "Name": "Stardew Valley Data Management",
+    "Author": "Liv Maresh",
+    "Version": "1.0.0",
+    "Description": "My personal mod to upload Stardew Valley run data to my database.",
+    "UniqueID": "livmaresh.StardewValleyDataManagement",
+    "EntryDll": "StardewValleyDataManagement.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": []
+}
