@@ -1303,7 +1303,7 @@ namespace StardewValleyDataManagement
 
             if (meta.farmerName != StardewValley.Game1.player.Name || meta.farmName != StardewValley.Game1.player.farmName.Value)
             {
-                outsideInfo.indexes[0] += 1;
+                this.outsideInfo.indexes[0] += 1;
                 eventData.runName = runName;
 
                 meta.runName = runName;
@@ -1359,8 +1359,6 @@ namespace StardewValleyDataManagement
                 var milestoneCheck = false;
                 var fieldOfficeCheck = false;
                 var historyCheck = false;
-
-                Monitor.Log(category);
 
                 if (category == "Mineral")
                 {
@@ -2116,7 +2114,7 @@ namespace StardewValleyDataManagement
                 {
                     if (tempItems[0] != "-1")
                     {
-                        StardewValley.ItemTypeDefinitions.ParsedItemData info = ItemRegistry.GetData("(O)" + tempItems[ii]);
+                        StardewValley.ItemTypeDefinitions.ParsedItemData info = ItemRegistry.GetData(tempItems[ii]);
                         bundleData.items[bb].Add(reverseFormat(info.DisplayName));
                     }
                     else
