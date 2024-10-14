@@ -11,6 +11,9 @@ namespace StardewValleyDataManagement
         public OutsideInfo() {
             this.ids = new List<int>();
             this.indexes = new List<int>();
+            this.ids.Add(0);
+            this.indexes.Add(0);
+            this.indexes.Add(0);
         }
 
         public List<int> ids;

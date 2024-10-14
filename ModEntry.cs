@@ -978,7 +978,7 @@ namespace StardewValleyDataManagement
             { "large-milk", "https://stardewvalleywiki.com/mediawiki/images/6/67/Large_Milk.png" },
             { "large-egg-brown", "https://stardewvalleywiki.com/mediawiki/images/9/91/Large_Brown_Egg.png" },
             { "large-egg-white", "https://stardewvalleywiki.com/mediawiki/images/5/5d/Large_Egg.png" },
-            { "large-goat-milk", "https://stardewvalleywiki.com/mediawiki/images/f/f2/Large_Goat_Milk.png" },
+            { "l.-goat-milk", "https://stardewvalleywiki.com/mediawiki/images/f/f2/Large_Goat_Milk.png" },
             { "wool", "https://stardewvalleywiki.com/mediawiki/images/3/34/Wool.png" },
             { "duck-egg", "https://stardewvalleywiki.com/mediawiki/images/3/31/Duck_Egg.png" },
             { "roe", "https://stardewvalleywiki.com/mediawiki/images/5/56/Roe.png" },
@@ -1076,7 +1076,7 @@ namespace StardewValleyDataManagement
             { "frozen-geode", "https://stardewvalleywiki.com/mediawiki/images/b/bf/Frozen_Geode.png" },
             { "wheat", "https://stardewvalleywiki.com/mediawiki/images/e/e2/Wheat.png" },
             { "hay", "https://stardewvalleywiki.com/mediawiki/images/a/aa/Hay.png" },
-            { "rabbits-foot", "https://stardewvalleywiki.com/mediawiki/images/c/ca/Rabbit%27s_Foot.png" },
+            { "rabbit's-foot", "https://stardewvalleywiki.com/mediawiki/images/c/ca/Rabbit%27s_Foot.png" },
             { "salmonberry", "https://stardewvalleywiki.com/mediawiki/images/5/59/Salmonberry.png" },
             { "cookie", "https://stardewvalleywiki.com/mediawiki/images/7/70/Cookie.png" },
             { "ancient-doll", "https://stardewvalleywiki.com/mediawiki/images/c/c0/Ancient_Doll.png" },
@@ -1095,6 +1095,69 @@ namespace StardewValleyDataManagement
             { "prismatic-shard", "https://stardewvalleywiki.com/mediawiki/images/5/56/Prismatic_Shard.png" },
             { "void-salmon", "https://stardewvalleywiki.com/mediawiki/images/a/ad/Void_Salmon.png" },
             { "caviar", "https://stardewvalleywiki.com/mediawiki/images/8/89/Caviar.png" },
+            { "coffee-bean", "https://stardewvalleywiki.com/mediawiki/images/3/33/Coffee_Bean.png" },
+            { "garlic", "https://stardewvalleywiki.com/mediawiki/images/c/cc/Garlic.png"},
+            { "rhubarb", "https://stardewvalleywiki.com/mediawiki/images/6/6e/Rhubarb.png" },
+            { "strawberry", "https://stardewvalleywiki.com/mediawiki/images/6/6d/Strawberry.png" },
+            { "unmilled-rice", "https://stardewvalleywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png" },
+            { "radish", "https://stardewvalleywiki.com/mediawiki/images/d/d5/Radish.png"},
+            { "artichoke", "https://stardewvalleywiki.com/mediawiki/images/d/dd/Artichoke.png" },
+            { "bok-choy", "https://stardewvalleywiki.com/mediawiki/images/4/40/Bok_Choy.png" },
+            { "cranberries", "https://stardewvalleywiki.com/mediawiki/images/6/6e/Cranberries.png" },
+            { "dinosaur-egg", "https://stardewvalleywiki.com/mediawiki/images/a/a1/Dinosaur_Egg.png" },
+            { "void-egg", "https://stardewvalleywiki.com/mediawiki/images/5/58/Void_Egg.png" },
+            { "goat-milk", "https://stardewvalleywiki.com/mediawiki/images/4/45/Goat_Milk.png" },
+            { "beer", "https://stardewvalleywiki.com/mediawiki/images/b/b3/Beer.png" },
+            { "vinegar", "https://stardewvalleywiki.com/mediawiki/images/f/fe/Vinegar.png" },
+            { "coffee", "https://stardewvalleywiki.com/mediawiki/images/e/e9/Coffee.png" },
+            { "mayonnaise", "https://stardewvalleywiki.com/mediawiki/images/4/4e/Mayonnaise.png" },
+            { "duck-mayonnaise", "https://stardewvalleywiki.com/mediawiki/images/2/23/Duck_Mayonnaise.png" },
+            { "void-mayonnaise", "https://stardewvalleywiki.com/mediawiki/images/f/f3/Void_Mayonnaise.png" },
+            { "oil", "https://stardewvalleywiki.com/mediawiki/images/0/06/Oil.png" },
+            { "pickles", "https://stardewvalleywiki.com/mediawiki/images/c/c7/Pickles.png" },
+            { "dried-fruit", "https://stardewvalleywiki.com/mediawiki/images/6/66/Dried_Fruit.png" },
+            { "dried-mushrooms", "https://stardewvalleywiki.com/mediawiki/images/1/1a/Dried_Mushrooms.png" },
+            { "raisins", "https://stardewvalleywiki.com/mediawiki/images/0/06/Raisins.png" },
+            { "smoked-fish", "https://stardewvalleywiki.com/mediawiki/images/4/4c/Smoked_Fish.png" },
+            { "chanterelle", "https://stardewvalleywiki.com/mediawiki/images/1/1d/Chanterelle.png" },
+            { "clay", "https://stardewvalleywiki.com/mediawiki/images/a/a2/Clay.png" },
+            { "rainbow-shell", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Rainbow_Shell.png" },
+            { "coral", "https://stardewvalleywiki.com/mediawiki/images/b/b1/Coral.png" },
+            { "smallmouth-bass", "https://stardewvalleywiki.com/mediawiki/images/a/a5/Smallmouth_Bass.png" },
+            { "rainbow-trout", "https://stardewvalleywiki.com/mediawiki/images/1/14/Rainbow_Trout.png" },
+            { "salmon", "https://stardewvalleywiki.com/mediawiki/images/e/e0/Salmon.png" },
+            { "perch", "https://stardewvalleywiki.com/mediawiki/images/4/43/Perch.png" },
+            { "pike", "https://stardewvalleywiki.com/mediawiki/images/3/31/Pike.png" },
+            { "dorado", "https://stardewvalleywiki.com/mediawiki/images/1/18/Dorado.png" },
+            { "lingcod", "https://stardewvalleywiki.com/mediawiki/images/8/87/Lingcod.png" },
+            { "anchovy", "https://stardewvalleywiki.com/mediawiki/images/7/79/Anchovy.png" },
+            { "red-mullet", "https://stardewvalleywiki.com/mediawiki/images/f/f2/Red_Mullet.png" },
+            { "herring", "https://stardewvalleywiki.com/mediawiki/images/f/f1/Herring.png" },
+            { "squid", "https://stardewvalleywiki.com/mediawiki/images/8/81/Squid.png" },
+            { "sea-cucumber", "https://stardewvalleywiki.com/mediawiki/images/a/a9/Sea_Cucumber.png" },
+            { "super-cucumber", "https://stardewvalleywiki.com/mediawiki/images/d/d5/Super_Cucumber.png" },
+            { "flounder", "https://stardewvalleywiki.com/mediawiki/images/8/85/Flounder.png" },
+            { "albacore", "https://stardewvalleywiki.com/mediawiki/images/e/e1/Albacore.png" },
+            { "halibut", "https://stardewvalleywiki.com/mediawiki/images/0/02/Halibut.png" },
+            { "midnight-squid", "https://stardewvalleywiki.com/mediawiki/images/8/83/Midnight_Squid.png" },
+            { "spook-fish", "https://stardewvalleywiki.com/mediawiki/images/8/8c/Spook_Fish.png" },
+            { "midnight-carp", "https://stardewvalleywiki.com/mediawiki/images/3/33/Midnight_Carp.png" },
+            { "stonefish", "https://stardewvalleywiki.com/mediawiki/images/0/03/Stonefish.png" },
+            { "ice-pip", "https://stardewvalleywiki.com/mediawiki/images/6/63/Ice_Pip.png" },
+            { "goby", "https://stardewvalleywiki.com/mediawiki/images/6/67/Goby.png" },
+            { "jade", "https://stardewvalleywiki.com/mediawiki/images/7/7e/Jade.png" },
+            { "bug-meat", "https://stardewvalleywiki.com/mediawiki/images/b/b6/Bug_Meat.png" },
+            { "complete-breakfast", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Complete_Breakfast.png" },
+            { "sashimi", "https://stardewvalleywiki.com/mediawiki/images/4/41/Sashimi.png" },
+            { "bluberry-tart", "https://stardewvalleywiki.com/mediawiki/images/9/9b/Blueberry_Tart.png" },
+            { "salmon-dinner", "https://stardewvalleywiki.com/mediawiki/images/8/8b/Salmon_Dinner.png" },
+            { "tea-leaves", "https://stardewvalleywiki.com/mediawiki/images/5/5b/Tea_Leaves.png" },
+            { "stingray", "https://stardewvalleywiki.com/mediawiki/images/3/3a/Stingray.png" },
+            { "radioactive-bar", "https://stardewvalleywiki.com/mediawiki/images/7/7e/Radioactive_Bar.png" },
+            { "iridium-band", "https://stardewvalleywiki.com/mediawiki/images/7/77/Iridium_Band.png" },
+            { "galaxy-hammer", "https://stardewvalleywiki.com/mediawiki/images/8/8a/Galaxy_Hammer.png" },
+            { "mango", "https://stardewvalleywiki.com/mediawiki/images/3/38/Mango.png" },
+            { "banana", "https://stardewvalleywiki.com/mediawiki/images/6/69/Banana.png" }
         };
 
         private Dictionary<string, string> translateMonsters = new Dictionary<string, string>()
@@ -1239,13 +1302,12 @@ namespace StardewValleyDataManagement
             var model = this.Helper.Data.ReadJsonFile<Approved>("Approved.json") ?? new Approved();
             if (!model.farmerNames.Contains(StardewValley.Game1.player.Name) || !model.farmNames.Contains(StardewValley.Game1.player.farmName.Value))
             {
-                this.outsideInfo.indexes[1] = 0;
 
                 model.farmerNames.Add(StardewValley.Game1.player.Name);
                 model.farmNames.Add(StardewValley.Game1.player.farmName.Value);
                 this.Helper.Data.WriteJsonFile("approved.json", model);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Welcome to the valley, " + StardewValley.Game1.player.Name + "! Use addRunName <name> in the SMAPI console to begin tracking your run :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SDVM]: Welcome to the valley, " + StardewValley.Game1.player.Name + "! Use addRunName 'name' in the SMAPI console to begin tracking your run :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
 
                 //robin
                 outsideInfo.indexes[1] += 1;
@@ -2220,6 +2282,24 @@ namespace StardewValleyDataManagement
                         {
                             item = "Wood 2";
                             reverseItem = "wood-2";
+                        }
+                    }
+
+                    if (category == "animal-bundle" && reverseItem == "large-egg")
+                    {
+                        var historyCheck = false;
+                        var tempIndex = history.events.IndexOf("large-egg-white");
+                        if (tempIndex == -1 || history.categories[tempIndex] != category) historyCheck = true;
+
+                        if (historyCheck)
+                        {
+                            item = "Large Egg White";
+                            reverseItem = "large-egg-white";
+                        }
+                        else
+                        {
+                            item = "Large Egg Brown";
+                            reverseItem = "large-egg-brown";
                         }
                     }
 
