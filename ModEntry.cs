@@ -27,15 +27,15 @@ namespace StardewValleyDataManagement
 
         private Dictionary<string, string> categorySprites = new Dictionary<string, string>()
         {
-            { "shipped", "https://stardewcommunitywiki.com/mediawiki/images/1/10/Gold.png" },
-            { "level-up", "https://stardewcommunitywiki.com/mediawiki/images/a/a9/Energy.png" },
-            { "fish", "https://stardewcommunitywiki.com/mediawiki/images/1/19/Fishing.png" },
-            { "milestone", "https://stardewcommunitywiki.com/mediawiki/images/b/b8/Golden_Scroll.png" },
-            { "crafting", "https://stardewcommunitywiki.com/mediawiki/images/e/ea/Workbench.png" },
-            { "friendship", "https://stardewcommunitywiki.com/mediawiki/images/archive/5/54/20170203084025%21Marriage_Icon.png" },
-            { "quest", "https://stardewcommunitywiki.com/mediawiki/images/archive/c/c2/20181004023118%21Quests_Icon.png" },
-            { "artifacts", "https://stardewcommunitywiki.com/mediawiki/images/0/09/Omni_Geode.png" },
-            { "minerals", "https://stardewcommunitywiki.com/mediawiki/images/0/09/Omni_Geode.png" },
+            { "shipped", "https://stardewvalleywiki.com/mediawiki/images/1/1c/Mini-Shipping_Bin.png" },
+            { "level-up", "https://stardewvalleywiki.com/mediawiki/images/d/df/Mastery_Icon.png" },
+            { "fish", "https://stardewvalleywiki.com/mediawiki/images/e/e7/Fishing_Skill_Icon.png" },
+            { "milestone", "https://stardewvalleywiki.com/mediawiki/images/b/b8/Golden_Scroll.png" },
+            { "crafting", "https://stardewvalleywiki.com/mediawiki/images/e/ea/Workbench.png" },
+            { "friendship", "https://stardewvalleywiki.com/mediawiki/images/6/63/DialogueBubbleLove.png" },
+            { "quest", "https://stardewvalleywiki.com/mediawiki/images/d/de/Bulletin_Board.png" },
+            { "artifacts", "https://stardewvalleywiki.com/mediawiki/images/8/82/Artifact_Trove.png" },
+            { "minerals", "https://stardewvalleywiki.com/mediawiki/images/0/09/Omni_Geode.png" },
             { "cooking", "https://stardewvalleywiki.com/mediawiki/images/4/4d/Mini-Fridge.png" },
             { "achievement", "https://stardewvalleywiki.com/mediawiki/images/5/5b/Achievement_Star_04.png" },
             { "bundle-green", "https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Bundle_Green.png/32px-Bundle_Green.png" },
@@ -46,7 +46,7 @@ namespace StardewValleyDataManagement
             { "bundle-purple", "https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/32px-Bundle_Purple.png" },
             { "bundle-blue", "https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Bundle_Blue.png/32px-Bundle_Blue.png" },
             { "monster-slayer", "https://stardewvalleywiki.com/mediawiki/images/3/37/Marlon.png" },
-            { "wallet", "https://stardewcommunitywiki.com/mediawiki/images/a/a9/Inventory_Icon.png" },
+            { "wallet", "https://stardewvalleywiki.com/mediawiki/images/3/36/36_Backpack.png" },
             { "island-field-office", "https://stardewvalleywiki.com/mediawiki/images/6/68/Professor_Snail_Happy.png" },
             { "books", "https://stardewvalleywiki.com/mediawiki/images/f/f3/Lost_Book.png" },
             { "powers", "https://stardewvalleywiki.com/mediawiki/images/5/51/Grandpa_Speaking.png" }
@@ -55,11 +55,11 @@ namespace StardewValleyDataManagement
         private Dictionary<string, string> miscSprites = new Dictionary<string, string>()
         {
             { "stardrop", "https://stardewvalleywiki.com/mediawiki/images/a/a5/Stardrop.png" },
-            { "combat", "https://stardewcommunitywiki.com/mediawiki/images/0/00/Attack.png" },
-            { "mining", "https://stardewcommunitywiki.com/mediawiki/images/4/41/Mining.png" },
-            { "fishing", "https://stardewcommunitywiki.com/mediawiki/images/1/19/Fishing.png" },
-            { "farming", "https://stardewcommunitywiki.com/mediawiki/images/1/18/Farming.png" },
-            { "foraging", "https://stardewcommunitywiki.com/mediawiki/images/b/ba/Foraging.png" },
+            { "combat", "https://stardewvalleywiki.com/mediawiki/images/c/cf/Combat_Skill_Icon.png" },
+            { "mining", "https://stardewvalleywiki.com/mediawiki/images/2/2f/Mining_Skill_Icon.png" },
+            { "fishing", "https://stardewvalleywiki.com/mediawiki/images/e/e7/Fishing_Skill_Icon.png" },
+            { "farming", "https://stardewvalleywiki.com/mediawiki/images/8/82/Farming_Skill_Icon.png" },
+            { "foraging", "https://stardewvalleywiki.com/mediawiki/images/f/f1/Foraging_Skill_Icon.png" },
             { "large-pack", "https://stardewvalleywiki.com/mediawiki/images/b/b1/Backpack.png" },
             { "deluxe-pack", "https://stardewvalleywiki.com/mediawiki/images/3/36/36_Backpack.png" },
             { "copper-pickaxe", "https://stardewvalleywiki.com/mediawiki/images/d/d7/Copper_Pickaxe.png" },
@@ -220,12 +220,12 @@ namespace StardewValleyDataManagement
             { "truffle-oil", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Truffle_Oil.png" },
             { "coffee-bean", "https://stardewvalleywiki.com/mediawiki/images/3/33/Coffee_Bean.png" },
             { "goat-milk", "https://stardewvalleywiki.com/mediawiki/images/4/45/Goat_Milk.png" },
-            { "large-goat-milk", "https://stardewvalleywiki.com/mediawiki/images/f/f2/Large_Goat_Milk.png" },
+            { "l.-goat-milk", "https://stardewvalleywiki.com/mediawiki/images/f/f2/Large_Goat_Milk.png" },
             { "wool", "https://stardewvalleywiki.com/mediawiki/images/3/34/Wool.png" },
             { "duck-egg", "https://stardewvalleywiki.com/mediawiki/images/3/31/Duck_Egg.png" },
             { "duck-feather", "https://stardewvalleywiki.com/mediawiki/images/f/f9/Duck_Feather.png" },
             { "caviar", "https://stardewvalleywiki.com/mediawiki/images/8/89/Caviar.png" },
-            { "rabbits-foot", "https://stardewvalleywiki.com/mediawiki/images/c/ca/Rabbit%27s_Foot.png" },
+            { "rabbit's-foot", "https://stardewvalleywiki.com/mediawiki/images/c/ca/Rabbit%27s_Foot.png" },
             { "aged-roe", "https://stardewvalleywiki.com/mediawiki/images/0/0e/Aged_Roe.png" },
             { "ancient-fruit", "https://stardewvalleywiki.com/mediawiki/images/0/01/Ancient_Fruit.png" },
             { "mead", "https://stardewvalleywiki.com/mediawiki/images/8/84/Mead.png" },
@@ -860,17 +860,17 @@ namespace StardewValleyDataManagement
 
         private Dictionary<string, string> walletSprites = new Dictionary<string, string>()
         {
-            { "dwarvish-translation-guide", "https://stardewcommunitywiki.com/mediawiki/images/9/9c/Dwarvish_Translation_Guide.png" },
-            { "rusty-key", "https://stardewcommunitywiki.com/mediawiki/images/8/87/Rusty_Key.png" },
-            { "club-card", "https://stardewcommunitywiki.com/mediawiki/images/0/0d/Club_Card.png" },
-            { "special-charm", "https://stardewcommunitywiki.com/mediawiki/images/5/50/Special_Charm.png" },
-            { "skull-key", "https://stardewcommunitywiki.com/mediawiki/images/d/d3/Skull_Key.png" },
-            { "magnifying-glass", "https://stardewcommunitywiki.com/mediawiki/images/5/5f/Magnifying_Glass.png" },
-            { "dark-talisman", "https://stardewcommunitywiki.com/mediawiki/images/e/e1/Dark_Talisman.png" },
-            { "magic-ink", "https://stardewcommunitywiki.com/mediawiki/images/4/4b/Magic_Ink.png" },
-            { "bears-knowledge", "https://stardewcommunitywiki.com/mediawiki/images/7/7d/Bear%27s_Knowledge.png" },
-            { "spring-onion-mastery", "https://stardewcommunitywiki.com/mediawiki/images/3/3e/Spring_Onion_Mastery.png" },
-            { "key-to-the-town", "https://stardewcommunitywiki.com/mediawiki/images/a/a7/Key_To_The_Town.png" },
+            { "dwarvish-translation-guide", "https://stardewvalleywiki.com/mediawiki/images/9/9c/Dwarvish_Translation_Guide.png" },
+            { "rusty-key", "https://stardewvalleywiki.com/mediawiki/images/8/87/Rusty_Key.png" },
+            { "club-card", "https://stardewvalleywiki.com/mediawiki/images/0/0d/Club_Card.png" },
+            { "special-charm", "https://stardewvalleywiki.com/mediawiki/images/5/50/Special_Charm.png" },
+            { "skull-key", "https://stardewvalleywiki.com/mediawiki/images/d/d3/Skull_Key.png" },
+            { "magnifying-glass", "https://stardewvalleywiki.com/mediawiki/images/5/5f/Magnifying_Glass.png" },
+            { "dark-talisman", "https://stardewvalleywiki.com/mediawiki/images/e/e1/Dark_Talisman.png" },
+            { "magic-ink", "https://stardewvalleywiki.com/mediawiki/images/4/4b/Magic_Ink.png" },
+            { "bears-knowledge", "https://stardewvalleywiki.com/mediawiki/images/7/7d/Bear%27s_Knowledge.png" },
+            { "spring-onion-mastery", "https://stardewvalleywiki.com/mediawiki/images/3/3e/Spring_Onion_Mastery.png" },
+            { "key-to-the-town", "https://stardewvalleywiki.com/mediawiki/images/a/a7/Key_To_The_Town.png" },
             { "forest-magic", "https://stardewvalleywiki.com/mediawiki/images/2/24/Forest_Magic.png" },
         };
 
@@ -911,11 +911,11 @@ namespace StardewValleyDataManagement
         };
 
         private Dictionary<string, string> powerSprites = new Dictionary<string, string>() {
-            { "farming-mastery", "https://stardewcommunitywiki.com/mediawiki/images/1/18/Farming.png" },
-            { "fishing-mastery", "https://stardewcommunitywiki.com/mediawiki/images/1/19/Fishing.png" },
-            { "foraging-mastery", "https://stardewcommunitywiki.com/mediawiki/images/b/ba/Foraging.png" },
-            { "mining-mastery", "https://stardewcommunitywiki.com/mediawiki/images/4/41/Mining.png" },
-            { "combat-mastery", "https://stardewcommunitywiki.com/mediawiki/images/0/00/Attack.png" },
+            { "farming-mastery", "https://stardewvalleywiki.com/mediawiki/images/8/82/Farming_Skill_Icon.png" },
+            { "fishing-mastery", "https://stardewvalleywiki.com/mediawiki/images/e/e7/Fishing_Skill_Icon.png" },
+            { "foraging-mastery", "https://stardewvalleywiki.com/mediawiki/images/f/f1/Foraging_Skill_Icon.png" },
+            { "mining-mastery", "https://stardewvalleywiki.com/mediawiki/images/2/2f/Mining_Skill_Icon.png" },
+            { "combat-mastery", "https://stardewvalleywiki.com/mediawiki/images/c/cf/Combat_Skill_Icon.png" },
         };
 
         private Dictionary<string, string> bundleSprites = new Dictionary<string, string>() {
