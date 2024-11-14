@@ -19,6 +19,8 @@ using StardewValley.Monsters;
 using StardewValley.Locations;
 using xTile;
 using Microsoft.Xna.Framework;
+using static System.Net.WebRequestMethods;
+using StardewValley.Internal;
 
 namespace StardewValleyDataManagement
 {
@@ -65,35 +67,35 @@ namespace StardewValleyDataManagement
             { "copper-pickaxe", "https://stardewvalleywiki.com/mediawiki/images/d/d7/Copper_Pickaxe.png" },
             { "steel-pickaxe", "https://stardewvalleywiki.com/mediawiki/images/d/d1/Steel_Pickaxe.png" },
             { "gold-pickaxe", "https://stardewvalleywiki.com/mediawiki/images/d/d3/Gold_Pickaxe.png" },
-            { "iridium-pickaxe", "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Iridium_Pickaxe.png" },
+            { "iridium-pickaxe", "https://stardewvalleywiki.com/mediawiki/images/c/ca/Iridium_Pickaxe.png" },
             { "copper-axe", "https://stardewvalleywiki.com/mediawiki/images/2/21/Copper_Axe.png" },
             { "steel-axe", "https://stardewvalleywiki.com/mediawiki/images/c/ce/Steel_Axe.png" },
-            { "gold-axe", "https://stardewcommunitywiki.com/mediawiki/images/2/29/Gold_Axe.png" },
-            { "iridium-axe", "https://stardewcommunitywiki.com/mediawiki/images/8/8b/Iridium_Axe.png" },
+            { "gold-axe", "https://stardewvalleywiki.com/mediawiki/images/2/29/Gold_Axe.png" },
+            { "iridium-axe", "https://stardewvalleywiki.com/mediawiki/images/8/8b/Iridium_Axe.png" },
             { "copper-watering-can", "https://stardewvalleywiki.com/mediawiki/images/0/0d/Copper_Watering_Can.png" },
-            { "steel-watering-can", "https://stardewcommunitywiki.com/mediawiki/images/6/66/Steel_Watering_Can.png" },
-            { "gold-watering-can", "https://stardewcommunitywiki.com/mediawiki/images/7/74/Gold_Watering_Can.png" },
-            { "iridium-watering-can", "https://stardewcommunitywiki.com/mediawiki/images/5/5e/Iridium_Watering_Can.png" },
-            { "copper-hoe", "https://stardewcommunitywiki.com/mediawiki/images/8/8f/Copper_Hoe.png" },
-            { "steel-hoe", "https://stardewcommunitywiki.com/mediawiki/images/f/f5/Steel_Hoe.png" },
-            { "gold-hoe", "https://stardewcommunitywiki.com/mediawiki/images/d/d3/Gold_Hoe.png" },
-            { "iridium-hoe", "https://stardewcommunitywiki.com/mediawiki/images/5/5f/Iridium_Hoe.png" },
-            { "golden-scythe", "https://stardewcommunitywiki.com/mediawiki/images/3/33/Golden_Scythe.png" },
+            { "steel-watering-can", "https://stardewvalleywiki.com/mediawiki/images/6/66/Steel_Watering_Can.png" },
+            { "gold-watering-can", "https://stardewvalleywiki.com/mediawiki/images/7/74/Gold_Watering_Can.png" },
+            { "iridium-watering-can", "https://stardewvalleywiki.com/mediawiki/images/5/5e/Iridium_Watering_Can.png" },
+            { "copper-hoe", "https://stardewvalleywiki.com/mediawiki/images/8/8f/Copper_Hoe.png" },
+            { "steel-hoe", "https://stardewvalleywiki.com/mediawiki/images/f/f5/Steel_Hoe.png" },
+            { "gold-hoe", "https://stardewvalleywiki.com/mediawiki/images/d/d3/Gold_Hoe.png" },
+            { "iridium-hoe", "https://stardewvalleywiki.com/mediawiki/images/5/5f/Iridium_Hoe.png" },
+            { "golden-scythe", "https://stardewvalleywiki.com/mediawiki/images/3/33/Golden_Scythe.png" },
             { "fiberglass-rod", "https://stardewvalleywiki.com/mediawiki/images/5/5e/Fiberglass_Rod.png" },
             { "iridium-rod", "https://stardewvalleywiki.com/mediawiki/images/0/05/Iridium_Rod.png" },
             { "copper-trash-can", "https://stardewvalleywiki.com/mediawiki/images/6/6f/Trash_Can_Copper.png" },
             { "steel-trash-can", "https://stardewvalleywiki.com/mediawiki/images/b/b9/Trash_Can_Steel.png" },
             { "gold-trash-can", "https://stardewvalleywiki.com/mediawiki/images/e/e0/Trash_Can_Gold.png" },
             { "iridium-trash-can", "https://stardewvalleywiki.com/mediawiki/images/a/ad/Trash_Can_Iridium.png" },
-            { "rarecrow-1", "https://stardewcommunitywiki.com/mediawiki/images/6/62/Rarecrow_1.png" },
-            { "rarecrow-2", "https://stardewcommunitywiki.com/mediawiki/images/2/28/Rarecrow_2.png" },
-            { "rarecrow-3", "https://stardewcommunitywiki.com/mediawiki/images/e/ea/Rarecrow_3.png" },
-            { "rarecrow-4", "https://stardewcommunitywiki.com/mediawiki/images/e/ef/Rarecrow_4.png" },
-            { "rarecrow-5", "https://stardewcommunitywiki.com/mediawiki/images/9/9f/Rarecrow_5.png" },
-            { "rarecrow-6", "https://stardewcommunitywiki.com/mediawiki/images/2/29/Rarecrow_6.png" },
+            { "rarecrow-1", "https://stardewvalleywiki.com/mediawiki/images/6/62/Rarecrow_1.png" },
+            { "rarecrow-2", "https://stardewvalleywiki.com/mediawiki/images/2/28/Rarecrow_2.png" },
+            { "rarecrow-3", "https://stardewvalleywiki.com/mediawiki/images/e/ea/Rarecrow_3.png" },
+            { "rarecrow-4", "https://stardewvalleywiki.com/mediawiki/images/e/ef/Rarecrow_4.png" },
+            { "rarecrow-5", "https://stardewvalleywiki.com/mediawiki/images/9/9f/Rarecrow_5.png" },
+            { "rarecrow-6", "https://stardewvalleywiki.com/mediawiki/images/2/29/Rarecrow_6.png" },
             { "rarecrow-7", "https://stardewvalleywiki.com/mediawiki/images/5/52/Rarecrow_7.png" },
             { "rarecrow-8", "https://stardewvalleywiki.com/mediawiki/images/b/bb/Rarecrow_8.png" },
-            { "gold", "https://stardewcommunitywiki.com/mediawiki/images/1/10/Gold.png" },
+            { "gold", "https://stardewvalleywiki.com/mediawiki/images/1/10/Gold.png" },
             { "hay", "https://stardewvalleywiki.com/mediawiki/images/a/aa/Hay.png" },
             { "frozen-geode", "https://stardewvalleywiki.com/mediawiki/images/b/bf/Frozen_Geode.png" },
             { "house-upgrade-1", "https://stardewvalleywiki.com/mediawiki/images/5/5d/House_%28tier_2%29.png" },
@@ -109,7 +111,7 @@ namespace StardewValleyDataManagement
             { "earth-obelisk", "https://stardewvalleywiki.com/mediawiki/images/3/3c/Earth_Obelisk.png" },
             { "desert-obelisk", "https://stardewvalleywiki.com/mediawiki/images/6/60/Desert_Obelisk.png" },
             { "island-obelisk", "https://stardewvalleywiki.com/mediawiki/images/1/18/Island_Obelisk.png" },
-            { "golden-clock", "https://stardewvalleywiki.com/mediawiki/images/b/b5/Gold_Clock.png" },
+            { "gold-clock", "https://stardewvalleywiki.com/mediawiki/images/b/b5/Gold_Clock.png" },
             { "statue-of-perfection", "https://stardewvalleywiki.com/mediawiki/images/b/b2/Statue_Of_Perfection.png" },
             { "statue-of-true-perfection", "https://stardewvalleywiki.com/mediawiki/images/d/db/Statue_Of_True_Perfection.png" },
             { "steel-pan", "https://stardewvalleywiki.com/mediawiki/images/4/49/Steel_Pan.png" },
@@ -196,8 +198,8 @@ namespace StardewValleyDataManagement
             { "coral", "https://stardewvalleywiki.com/mediawiki/images/b/b1/Coral.png" },
             { "rainbow-shell", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Rainbow_Shell.png" },
             { "spice-berry", "https://stardewvalleywiki.com/mediawiki/images/c/c6/Spice_Berry.png" },
-            { "sea-urchin", "https://stardewcommunitywiki.com/mediawiki/images/e/e7/Sea_Urchin.png" },
-            { "grape", "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Grape.png" },
+            { "sea-urchin", "https://stardewvalleywiki.com/mediawiki/images/e/e7/Sea_Urchin.png" },
+            { "grape", "https://stardewvalleywiki.com/mediawiki/images/c/c2/Grape.png" },
             { "spring-onion", "https://stardewvalleywiki.com/mediawiki/images/0/0c/Spring_Onion.png" },
             { "strawberry", "https://stardewvalleywiki.com/mediawiki/images/6/6d/Strawberry.png" },
             { "sweet-pea", "https://stardewvalleywiki.com/mediawiki/images/d/d9/Sweet_Pea.png" },
@@ -430,7 +432,7 @@ namespace StardewValleyDataManagement
             { "neptunite", "https://stardewvalleywiki.com/mediawiki/images/0/05/Neptunite.png" },
             { "lemon-stone", "https://stardewvalleywiki.com/mediawiki/images/3/31/Lemon_Stone.png" },
             { "nekoite", "https://stardewvalleywiki.com/mediawiki/images/5/53/Nekoite.png" },
-            { "opriment", "https://stardewvalleywiki.com/mediawiki/images/4/41/Orpiment.png" },
+            { "orpiment", "https://stardewvalleywiki.com/mediawiki/images/4/41/Orpiment.png" },
             { "petrified-slime", "https://stardewvalleywiki.com/mediawiki/images/2/24/Petrified_Slime.png" },
             { "thunder-egg", "https://stardewvalleywiki.com/mediawiki/images/1/14/Thunder_Egg.png" },
             { "pyrite", "https://stardewvalleywiki.com/mediawiki/images/6/64/Pyrite.png" },
@@ -602,7 +604,7 @@ namespace StardewValleyDataManagement
             { "wild-seeds-fa", "https://stardewvalleywiki.com/mediawiki/images/5/55/Fall_Seeds.png" },
             { "wild-seeds-wi", "https://stardewvalleywiki.com/mediawiki/images/d/dd/Winter_Seeds.png" },
             { "fiber-seeds", "https://stardewvalleywiki.com/mediawiki/images/0/05/Fiber_Seeds.png" },
-            { "tea-sappling", "https://stardewvalleywiki.com/mediawiki/images/1/12/Tea_Sapling.png" },
+            { "tea-sapling", "https://stardewvalleywiki.com/mediawiki/images/1/12/Tea_Sapling.png" },
             { "warp-totem-farm", "https://stardewvalleywiki.com/mediawiki/images/e/e4/Warp_Totem_Farm.png" },
             { "warp-totem-mountains", "https://stardewvalleywiki.com/mediawiki/images/d/d8/Warp_Totem_Mountains.png" },
             { "warp-totem-beach", "https://stardewvalleywiki.com/mediawiki/images/2/2f/Warp_Totem_Beach.png" },
@@ -710,7 +712,7 @@ namespace StardewValleyDataManagement
         };
 
         private Dictionary<string, string> questSprites = new Dictionary<string, string>() {
-            { "introductions", "https://stardewcommunitywiki.com/mediawiki/images/archive/5/54/20170203084025%21Marriage_Icon.png" },
+            { "introductions", "https://stardewvalleywiki.com/mediawiki/images/6/63/DialogueBubbleLove.png" },
             { "how-to-win-friends", "https://stardewvalleywiki.com/mediawiki/images/b/bb/Fishing_Treasure_Chest.png" },
             { "getting-started", "https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png" },
             { "to-the-beach", "https://stardewvalleywiki.com/mediawiki/images/5/5e/Fiberglass_Rod.png" },
@@ -725,19 +727,19 @@ namespace StardewValleyDataManagement
             { "forging-ahead", "https://stardewvalleywiki.com/mediawiki/images/d/de/Furnace_On.png" },
             { "smelting", "https://stardewvalleywiki.com/mediawiki/images/f/f1/Copper_Bar.png" },
             { "initiation", "https://stardewvalleywiki.com/mediawiki/images/b/bc/Green_Slime_Anim.gif" },
-            { "robins-lost-axe", "https://stardewvalleywiki.com/mediawiki/images/4/4f/Springobjects788.png" },
-            { "jodis-request", "https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png" },
-            { "mayors-shorts", "https://stardewvalleywiki.com/mediawiki/images/0/04/Springobjects789.png" },
+            { "robin's-lost-axe", "https://stardewvalleywiki.com/mediawiki/images/4/4f/Springobjects788.png" },
+            { "jodi's-request", "https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png" },
+            { "mayor's-shorts", "https://stardewvalleywiki.com/mediawiki/images/0/04/Springobjects789.png" },
             { "blackberry-basket", "https://stardewvalleywiki.com/mediawiki/images/5/5a/Springobjects790.png" },
-            { "marnies-request", "https://stardewvalleywiki.com/mediawiki/images/3/34/Cave_Carrot.png" },
+            { "marnie's-request", "https://stardewvalleywiki.com/mediawiki/images/3/34/Cave_Carrot.png" },
             { "pam-is-thirsty", "https://stardewvalleywiki.com/mediawiki/images/7/78/Pale_Ale.png" },
             { "a-dark-reagent", "https://stardewvalleywiki.com/mediawiki/images/1/1f/Void_Essence.png" },
-            { "cows-delight", "https://stardewvalleywiki.com/mediawiki/images/f/f6/Amaranth.png" },
+            { "cow's-delight", "https://stardewvalleywiki.com/mediawiki/images/f/f6/Amaranth.png" },
             { "the-skull-key", "https://stardewvalleywiki.com/mediawiki/images/d/d3/Skull_Key.png" },
             { "crop-research", "https://stardewvalleywiki.com/mediawiki/images/1/19/Melon.png" },
             { "knee-therapy", "https://stardewvalleywiki.com/mediawiki/images/f/f1/Hot_Pepper.png" },
-            { "robins-request", "https://stardewvalleywiki.com/mediawiki/images/e/ed/Hardwood.png" },
-            { "qis-challenge", "https://stardewvalleywiki.com/mediawiki/images/b/b4/Mr._Qi.png" },
+            { "robin's-request", "https://stardewvalleywiki.com/mediawiki/images/e/ed/Hardwood.png" },
+            { "qi's-challenge", "https://stardewvalleywiki.com/mediawiki/images/b/b4/Mr._Qi.png" },
             { "the-mysterious-qi", "https://stardewvalleywiki.com/mediawiki/images/b/b4/Mr._Qi.png" },
             { "carving-pumpkins", "https://stardewvalleywiki.com/mediawiki/images/6/64/Pumpkin.png" },
             { "a-winter-mystery", "https://stardewvalleywiki.com/mediawiki/images/5/5f/Magnifying_Glass.png" },
@@ -745,23 +747,23 @@ namespace StardewValleyDataManagement
             { "cryptic-note", "https://stardewvalleywiki.com/mediawiki/images/e/ec/Secret_Note.png" },
             { "fresh-fruit", "https://stardewvalleywiki.com/mediawiki/images/f/fc/Apricot.png" },
             { "aquatic-research", "https://stardewvalleywiki.com/mediawiki/images/b/ba/Pufferfish.png" },
-            { "a-soldiers-star", "https://stardewvalleywiki.com/mediawiki/images/d/db/Starfruit.png" },
-            { "mayors-need", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Truffle_Oil.png" },
-            { "wanted-lobster", "https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png" },
+            { "a-soldier's-star", "https://stardewvalleywiki.com/mediawiki/images/d/db/Starfruit.png" },
+            { "mayor's-need", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Truffle_Oil.png" },
+            { "wanted:-lobster", "https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png" },
             { "pam-needs-juice", "https://stardewvalleywiki.com/mediawiki/images/2/25/Battery_Pack.png" },
             { "fish-casserole", "https://stardewvalleywiki.com/mediawiki/images/1/11/Largemouth_Bass.png" },
             { "catch-a-squid", "https://stardewvalleywiki.com/mediawiki/images/8/81/Squid.png" },
             { "fish-stew", "https://stardewvalleywiki.com/mediawiki/images/e/e1/Albacore.png" },
-            { "pierres-notice", "https://stardewvalleywiki.com/mediawiki/images/4/41/Sashimi.png" },
-            { "clints-attempt", "https://stardewvalleywiki.com/mediawiki/images/2/2e/Amethyst.png" },
+            { "pierre's-notice", "https://stardewvalleywiki.com/mediawiki/images/4/41/Sashimi.png" },
+            { "clint's-attempt", "https://stardewvalleywiki.com/mediawiki/images/2/2e/Amethyst.png" },
             { "a-favor-for-clint", "https://stardewvalleywiki.com/mediawiki/images/6/6c/Iron_Bar.png" },
             { "staff-of-power", "https://stardewvalleywiki.com/mediawiki/images/c/c4/Iridium_Bar.png" },
-            { "grannys-gift", "https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png" },
+            { "granny's-gift", "https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png" },
             { "exotic-spirits", "https://stardewvalleywiki.com/mediawiki/images/2/2f/Coconut.png" },
             { "catch-a-lingcod", "https://stardewvalleywiki.com/mediawiki/images/8/87/Lingcod.png" },
             { "dark-talisman", "https://stardewvalleywiki.com/mediawiki/images/e/e1/Dark_Talisman.png" },
             { "goblin-problem", "https://stardewvalleywiki.com/mediawiki/images/f/f3/Void_Mayonnaise.png" },
-            { "the-pirates-wife", "https://stardewvalleywiki.com/mediawiki/images/1/18/Pirate%27s_Locket.png" },
+            { "the-pirate's-wife", "https://stardewvalleywiki.com/mediawiki/images/1/18/Pirate%27s_Locket.png" },
             { "island-ingredients", "https://stardewvalleywiki.com/mediawiki/images/0/01/Taro_Root.png" },
             { "cave-patrol", "https://stardewvalleywiki.com/mediawiki/images/8/8c/Bat_Anim.gif" },
             { "aquatic-overpopulation", "https://stardewvalleywiki.com/mediawiki/images/1/11/Largemouth_Bass.png" },
@@ -770,7 +772,7 @@ namespace StardewValleyDataManagement
             { "gifts-for-george", "https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png" },
             { "fragments-of-the-past", "https://stardewvalleywiki.com/mediawiki/images/9/97/Bone_Fragment.png" },
             { "community-cleanup", "https://stardewvalleywiki.com/mediawiki/images/7/7c/Trash_%28item%29.png" },
-            { "robins-resource-rush", "https://stardewvalleywiki.com/mediawiki/images/d/df/Wood.png" },
+            { "robin's-resource-rush", "https://stardewvalleywiki.com/mediawiki/images/d/df/Wood.png" },
             { "juicy-bugs-wanted!", "https://stardewvalleywiki.com/mediawiki/images/b/b6/Bug_Meat.png" },
             { "a-curious-substance", "https://stardewvalleywiki.com/mediawiki/images/3/36/Ectoplasm.png" },
             { "prismatic-jelly", "https://stardewvalleywiki.com/mediawiki/images/4/45/Prismatic_Jelly.png" },
@@ -801,7 +803,7 @@ namespace StardewValleyDataManagement
             { "jas", "https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png" },
             { "jodi", "https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png" },
             { "kent", "https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png" },
-            { "krobus", "https://stardewcommunitywiki.com/mediawiki/images/7/71/Krobus.png" },
+            { "krobus", "https://stardewvalleywiki.com/mediawiki/images/b/bc/Krobus_Happy.png" },
             { "leo", "https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png" },
             { "lewis", "https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png" },
             { "linus", "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png" },
@@ -891,22 +893,22 @@ namespace StardewValleyDataManagement
         private Dictionary<string, string> bookSprites = new Dictionary<string, string>() {
             { "price-catalogue", "https://stardewvalleywiki.com/mediawiki/images/d/d5/Price_Catalogue.png" },
             { "mapping-cave-systems", "https://stardewvalleywiki.com/mediawiki/images/6/6e/Mapping_Cave_Systems.png" },
-            { "way-of-the-wind-pt-1", "https://stardewvalleywiki.com/mediawiki/images/8/87/Way_Of_The_Wind_pt._1.png" },
-            { "way-of-the-wind-pt-2", "https://stardewvalleywiki.com/mediawiki/images/c/c7/Way_Of_The_Wind_pt._2.png" },
+            { "way-of-the-wind-pt.-1", "https://stardewvalleywiki.com/mediawiki/images/8/87/Way_Of_The_Wind_pt._1.png" },
+            { "way-of-the-wind-pt.-2", "https://stardewvalleywiki.com/mediawiki/images/c/c7/Way_Of_The_Wind_pt._2.png" },
             { "monster-compendium", "https://stardewvalleywiki.com/mediawiki/images/1/15/Monster_Compendium.png" },
             { "friendship-101", "https://stardewvalleywiki.com/mediawiki/images/b/b7/Friendship_101.png" },
-            { "jack-be-nimble-jack-be-thick", "https://stardewvalleywiki.com/mediawiki/images/c/c2/Jack_Be_Nimble%2C_Jack_Be_Thick.png" },
-            { "woodys-secret", "https://stardewvalleywiki.com/mediawiki/images/8/8b/Woody%27s_Secret.png" },
+            { "jack-be-nimble,-jack-be-thick", "https://stardewvalleywiki.com/mediawiki/images/c/c2/Jack_Be_Nimble%2C_Jack_Be_Thick.png" },
+            { "woody's-secret", "https://stardewvalleywiki.com/mediawiki/images/8/8b/Woody%27s_Secret.png" },
             { "raccoon-journal", "https://stardewvalleywiki.com/mediawiki/images/1/1b/Ways_Of_The_Wild.png" },
             { "jewels-of-the-sea", "https://stardewvalleywiki.com/mediawiki/images/7/7d/Jewels_Of_The_Sea.png" },
             { "dwarvish-safety-manual", "https://stardewvalleywiki.com/mediawiki/images/a/a7/Dwarvish_Safety_Manual.png" },
-            { "the-art-o-crabbing", "https://stardewvalleywiki.com/mediawiki/images/c/c6/The_Art_O%27_Crabbing.png" },
+            { "the-art-o'-crabbing", "https://stardewvalleywiki.com/mediawiki/images/c/c6/The_Art_O%27_Crabbing.png" },
             { "the-alleyway-buffet", "https://stardewvalleywiki.com/mediawiki/images/3/3a/The_Alleyway_Buffet.png" },
             { "the-diamond-hunter", "https://stardewvalleywiki.com/mediawiki/images/a/a7/The_Diamond_Hunter.png" },
             { "book-of-mysteries", "https://stardewvalleywiki.com/mediawiki/images/d/df/Book_of_Mysteries.png" },
             { "horse-the-book", "https://stardewvalleywiki.com/mediawiki/images/4/45/Horse_The_Book.png" },
             { "treasure-appraisal-guide", "https://stardewvalleywiki.com/mediawiki/images/0/02/Treasure_Appraisal_Guide.png" },
-            { "ol-slitherlegs", "https://stardewvalleywiki.com/mediawiki/images/0/02/Ol%27_Slitherlegs.png" },
+            { "ol'-slitherlegs", "https://stardewvalleywiki.com/mediawiki/images/0/02/Ol%27_Slitherlegs.png" },
             { "animal-catalogue", "https://stardewvalleywiki.com/mediawiki/images/d/df/Animal_Catalogue.png" },
         };
 
@@ -1090,7 +1092,7 @@ namespace StardewValleyDataManagement
             { "plum-pudding", "https://stardewvalleywiki.com/mediawiki/images/a/a0/Plum_Pudding.png" },
             { "stuffing", "https://stardewvalleywiki.com/mediawiki/images/9/9a/Stuffing.png" },
             { "powdermelon", "https://stardewvalleywiki.com/mediawiki/images/a/aa/Powdermelon.png" },
-            { "gold", "https://stardewcommunitywiki.com/mediawiki/images/1/10/Gold.png" },
+            { "gold", "https://stardewvalleywiki.com/mediawiki/images/1/10/Gold.png" },
             { "dinosaur-mayonnaise", "https://stardewvalleywiki.com/mediawiki/images/c/c3/Dinosaur_Mayonnaise.png" },
             { "prismatic-shard", "https://stardewvalleywiki.com/mediawiki/images/5/56/Prismatic_Shard.png" },
             { "void-salmon", "https://stardewvalleywiki.com/mediawiki/images/a/ad/Void_Salmon.png" },
@@ -1149,42 +1151,42 @@ namespace StardewValleyDataManagement
             { "bug-meat", "https://stardewvalleywiki.com/mediawiki/images/b/b6/Bug_Meat.png" },
             { "complete-breakfast", "https://stardewvalleywiki.com/mediawiki/images/3/3d/Complete_Breakfast.png" },
             { "sashimi", "https://stardewvalleywiki.com/mediawiki/images/4/41/Sashimi.png" },
-            { "bluberry-tart", "https://stardewvalleywiki.com/mediawiki/images/9/9b/Blueberry_Tart.png" },
+            { "blueberry-tart", "https://stardewvalleywiki.com/mediawiki/images/9/9b/Blueberry_Tart.png" },
             { "salmon-dinner", "https://stardewvalleywiki.com/mediawiki/images/8/8b/Salmon_Dinner.png" },
             { "tea-leaves", "https://stardewvalleywiki.com/mediawiki/images/5/5b/Tea_Leaves.png" },
             { "stingray", "https://stardewvalleywiki.com/mediawiki/images/3/3a/Stingray.png" },
             { "radioactive-bar", "https://stardewvalleywiki.com/mediawiki/images/7/7e/Radioactive_Bar.png" },
             { "iridium-band", "https://stardewvalleywiki.com/mediawiki/images/7/77/Iridium_Band.png" },
-            { "galaxy-hammer", "https://stardewvalleywiki.com/mediawiki/images/8/8a/Galaxy_Hammer.png" },
             { "mango", "https://stardewvalleywiki.com/mediawiki/images/3/38/Mango.png" },
-            { "banana", "https://stardewvalleywiki.com/mediawiki/images/6/69/Banana.png" }
+            { "banana", "https://stardewvalleywiki.com/mediawiki/images/6/69/Banana.png" },
         };
 
         private Dictionary<string, string> translateMonsters = new Dictionary<string, string>()
         {
-            {"Slime Charmed Ring", "Slimes" },
-            {"Savage Ring", "Void Spirits" },
-            {"Vampire Ring", "Bats" },
-            {"Skeleton Mask", "Skeletons" },
-            {"Insect Head", "Cave Insects" },
-            {"Hard Hat", "Duggies" },
-            {"Burglar's Ring", "Dust Sprites" },
-            {"Crabshell Ring", "Rock Crabs" },
-            {"Arcane Hat", "Mummies" },
-            {"Knight's Helmet", "Pepper Rex" },
-            {"Napalm Ring", "Serpents" },
-            // magma sprites are manual
+            {"Slimes", "Slimes" },
+            {"Shadows", "Void Spirits" },
+            {"Bats", "Bats" },
+            {"Skeletons", "Skeletons" },
+            {"Insects", "Cave Insects" },
+            {"Duggy", "Duggies" },
+            {"DustSpirits", "Dust Sprites" },
+            {"Crabs", "Rock Crabs" },
+            {"Mummies", "Mummies" },
+            {"Dinos", "Pepper Rexes" },
+            {"Serpents", "Serpents" },
+            {"FlameSpirits","Flame Spirits" }
         };
 
         private string[] fishExceptions = {"Seaweed","Green Algae","White Algae","Sea Jelly","River Jelly","Cave Jelly" };
 
-        // manual: iridium snake milk, obelisk, golden clock, stardrop, magma sprite
+        private string[] milestoneExceptions = { "Gold", "Hay", "Frozen Geode" };
 
         private string runName = "";
         private string date = "";
         private BundleData bundleData = new BundleData();
         private List<string> bundleQueue = new List<string>();
         private List<string> quests = new List<string>();
+        private List<string> specialOrders = new List<string>();
         private List<int> friendshipLevel = new List<int>();
         private List<int> friendshipHearts = new List<int>();
         private List<string> cachedCooking = new List<string>();
@@ -1199,9 +1201,11 @@ namespace StardewValleyDataManagement
         private bool foragingMastery = false;
         private bool fishingMastery = false;
         private bool combatMastery = false;
+        private bool reverseFlags = false;
         private int houseUpdate = 0;
         private int trashUpdade = 0;
         private int bagSize = 0;
+        private int money = 0;
 
         private EventData eventData = new EventData();
         private MetaData meta = new MetaData();
@@ -1220,7 +1224,7 @@ namespace StardewValleyDataManagement
             helper.Events.Display.MenuChanged += this.MenuChanged;
         }
 
-        private void DayStarted(object sender, DayStartedEventArgs e) {
+        private void DayStarted(object? sender, DayStartedEventArgs e) {
             date = getStardewDate();
 
             var newHouse = StardewValley.Game1.player.HouseUpgradeLevel;
@@ -1230,7 +1234,7 @@ namespace StardewValleyDataManagement
             {
                 outsideInfo.indexes[1] += 1;
                 var category = "milestone";
-                var item = "House Update " + newHouse.ToString();
+                var item = "House Upgrade " + newHouse.ToString();
                 var reverseItem = reverseFormat(item);
 
                 eventData.id.Add(generateID());
@@ -1238,13 +1242,13 @@ namespace StardewValleyDataManagement
                 eventData.category.Add(category);
                 eventData.categorySprite.Add(categorySprites[category]);
                 eventData.lastEvent.Add(reverseItem);
-                eventData.itemSprite.Add(mineralSprites[reverseItem]);
+                eventData.itemSprite.Add(miscSprites[reverseItem]);
                 eventData.description.Add(FormatDescription(category, item));
                 eventData.date.Add(date);
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestone " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Milestone " + item + " has been added to your collection!");
 
                 houseUpdate = newHouse;
@@ -1268,24 +1272,27 @@ namespace StardewValleyDataManagement
                 eventData.category.Add(category);
                 eventData.categorySprite.Add(categorySprites[category]);
                 eventData.lastEvent.Add(reverseItem);
-                eventData.itemSprite.Add(mineralSprites[reverseItem]);
+                eventData.itemSprite.Add(miscSprites[reverseItem]);
                 eventData.description.Add(FormatDescription(category, item));
                 eventData.date.Add(date);
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestone " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Milestone " + item + " has been added to your collection!");
 
                 trashUpdade = newTrash;
             }
+
+            checkObelisks();
         }
 
-        private void SaveLoaded(object? send, SaveLoadedEventArgs e)
+        private void SaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
             this.outsideInfo = this.Helper.Data.ReadJsonFile<OutsideInfo>("OutsideInfo.json") ?? new OutsideInfo();
 
             initQuests();
+            initSpecialOrders();
             initFriendship();
             initBundles();
             initPowers();
@@ -1294,9 +1301,11 @@ namespace StardewValleyDataManagement
             houseUpdate = StardewValley.Game1.player.HouseUpgradeLevel;
             trashUpdade = StardewValley.Game1.player.trashCanLevel;
             bagSize = StardewValley.Game1.player.MaxItems;
+            money = Game1.player.team.money.Value;
 
             this.Helper.ConsoleCommands.Add("addRunName", "Change current run's name.", ccRunName);
             this.Helper.ConsoleCommands.Add("addEvent", "Add an event manually to your run.", ccManualAddition);
+            this.Helper.ConsoleCommands.Add("runFinished", "Register this run as complete.", ccFinished);
             this.Helper.ConsoleCommands.Add("helpMe", "Get info about this mod.", ccHelp);
 
             var model = this.Helper.Data.ReadJsonFile<Approved>("Approved.json") ?? new Approved();
@@ -1307,7 +1316,7 @@ namespace StardewValleyDataManagement
                 model.farmNames.Add(StardewValley.Game1.player.farmName.Value);
                 this.Helper.Data.WriteJsonFile("approved.json", model);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Welcome to the valley, " + StardewValley.Game1.player.Name + "! Use addRunName 'name' in the SMAPI console to begin tracking your run :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Welcome to the valley, " + StardewValley.Game1.player.Name + "! Use addRunName 'name' in the SMAPI console to begin tracking your run :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
 
                 //robin
                 outsideInfo.indexes[1] += 1;
@@ -1320,12 +1329,12 @@ namespace StardewValleyDataManagement
                 eventData.categorySprite.Add(categorySprites["friendship"]);
                 eventData.itemSprite.Add(characterSprites[reverseEvent]);
                 eventData.description.Add(FormatDescription("friendship-0", "Robin"));
-                eventData.date.Add(date);
+                eventData.date.Add("Spring 1 Year 1");
 
                 history.categories.Add("friendship-0");
                 history.events.Add(reverseEvent);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Friendship 0 Robin has been achieved!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Friendship 0 Robin has been achieved!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Friendship 0 Robin has been achieved!");
 
                 //lewis
@@ -1339,26 +1348,30 @@ namespace StardewValleyDataManagement
                 eventData.categorySprite.Add(categorySprites["friendship"]);
                 eventData.itemSprite.Add(characterSprites[reverseEvent]);
                 eventData.description.Add(FormatDescription("friendship-0", "Lewis"));
-                eventData.date.Add(date);
+                eventData.date.Add("Spring 1 Year 1");
 
                 history.categories.Add("friendship-0");
                 history.events.Add(reverseEvent);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Friendship 0 Lewis has been achieved!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Friendship 0 Lewis has been achieved!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Friendship 0 Lewis has been achieved!");
+
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest Introductions has been added to your quest log!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                Monitor.Log("Quest Introductions has been added to your quest log!");
             }
             else
             {
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Welcome back, " + StardewValley.Game1.player.Name + "! :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Welcome back, " + StardewValley.Game1.player.Name + "! :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 this.meta = this.Helper.Data.ReadJsonFile<MetaData>("MetaData.json") ?? new MetaData();
-                this.eventData = this.Helper.Data.ReadJsonFile<EventData>("EventData.json") ?? new EventData();
+                this.eventData = new EventData();
+                this.eventData.runName = this.meta.runName;
                 this.history = this.Helper.Data.ReadJsonFile<History>("History.json") ?? new History();
             }
 
             saveLaucnhedFlag = true;
         }
 
-        private void DayEnding(object? send, DayEndingEventArgs e)
+        private void DayEnding(object? sender, DayEndingEventArgs e)
         {
 
             var mLength = eventData.lastEvent.Count - 1;
@@ -1370,8 +1383,8 @@ namespace StardewValleyDataManagement
 
                 meta.runName = runName;
                 meta.index = outsideInfo.indexes[0];
-                meta.farmName = StardewValley.Game1.player.Name;
-                meta.farmerName = StardewValley.Game1.player.farmName.Value;
+                meta.farmName = StardewValley.Game1.player.farmName.Value;
+                meta.farmerName = StardewValley.Game1.player.Name;
                 if (StardewValley.Game1.player.hasPet())
                 {
                     meta.petName = StardewValley.Game1.player.getPetDisplayName();
@@ -1390,7 +1403,7 @@ namespace StardewValleyDataManagement
             if(mLength >= 0)
             {
                 meta.lastCategory = eventData.category[mLength];
-                meta.lastEvent = eventData.category[mLength];
+                meta.lastEvent = eventData.lastEvent[mLength];
                 meta.itemSprite = eventData.itemSprite[mLength];
                 meta.date = eventData.date[mLength];
                 meta.description = eventData.description[mLength];
@@ -1402,21 +1415,49 @@ namespace StardewValleyDataManagement
             this.Helper.Data.WriteJsonFile<EventData>("EventData.json", eventData);
         }
 
-        private void InventoryChanged(object? send, InventoryChangedEventArgs e)
+        private void InventoryChanged(object? sender, InventoryChangedEventArgs e)
         {
             foreach (StardewValley.Item item in e.Added)
             {
                 var reverseItem = reverseFormat(item.Name);
                 var category = item.getCategoryName();
 
+                if (item.Name.Contains("Dwarf Scroll"))
+                {
+                    var tempSplit = item.Name.Split(' ');
+                    reverseItem = "dwarf-scroll-" + tempSplit[2];
+                }
+                else if (item.ItemId == "126")
+                {
+                    reverseItem = "strange-doll-green";
+                }
+                else if (item.ItemId == "127")
+                {
+                    reverseItem = "strange-doll-yellow";
+                }
+                else if (item.Name == "Rarecrow")
+                {
+                    var tempDescription = item.getDescription().Split("(");
+                    var numChar = tempDescription[1][0];
+                    var newItem = "Rarecrow " + numChar;
+                    reverseItem = reverseFormat(newItem);
+                }
+                else if (item.Name == "Spring Seeds") reverseItem = "wild-seeds-sp";
+                else if (item.Name == "Summer Seeds") reverseItem = "wild-seeds-su";
+                else if (item.Name == "Fall Seeds") reverseItem = "wild-seeds-fa";
+                else if (item.Name == "Winter Seeds") reverseItem = "wild-seeds-wi";
+                else if (item.Name.Contains("Smoked")) reverseItem = "smoked-fish";
+                else if (item.ItemId == "174") reverseItem = "large-egg-white";
+                else if (item.ItemId == "176") reverseItem = "egg-white";
+                else if (item.ItemId == "180") reverseItem = "egg-brown";
+                else if (item.ItemId == "182") reverseItem = "large-egg-brown";
+                else if (item.Name.Contains("Honey")) reverseItem = "honey";
+                else if (category == "Book") reverseItem = reverseFormat(item.DisplayName);
 
                 var mineralCheck = false;
                 var artifactCheck = false;
                 var fishCheck = false;
-                var cookingCheck = false;
-                var craftingCheck = false;
                 var bookCheck = false;
-                var monsterCheck = false;
 
                 var milestoneCheck = false;
                 var fieldOfficeCheck = false;
@@ -1437,46 +1478,51 @@ namespace StardewValleyDataManagement
                     fishCheck = true;
                     category = "fish";
                 }
-                else if (category == "Cooking" && StardewValley.Game1.player.recipesCooked.ContainsKey(item.Name)){
+                else if (cookingSprites.ContainsKey(reverseItem))
+                {
                     category = "cooking";
                     cachedCooking.Add(item.Name);
                 }
-                else if(category == "Books" && bookSprites.ContainsKey(reverseItem))
+                else if(category == "Book" && bookSprites.ContainsKey(reverseItem))
                 {
                     category = "books";
                     bookCheck = true;
                     
                 }
-                else if (category == "")
+                else if (fieldOfficeSprites.ContainsKey(reverseItem))
                 {
-                    if (craftingCheck == false && fieldOfficeSprites.ContainsKey(reverseItem))
-                    {
-                        fieldOfficeCheck = true;
-                        category = "island-field-office";
-                    }
-                    else if(StardewValley.Game1.player.craftingRecipes.ContainsKey(item.Name))
-                    {
-                        category = "crafting";
-                        cachedCrafting.Add(item.Name);
-                    }
+                    fieldOfficeCheck = true;
+                    category = "island-field-office";
                 }
-                else if (miscSprites.ContainsKey(reverseItem) || item.Name == "Rarecrow")
+                else if ((miscSprites.ContainsKey(reverseItem) || item.Name == "Rarecrow") && !milestoneExceptions.Contains(item.Name))
                 {
                     milestoneCheck = true;
                     category = "milestone";
                 }
-                else if (translateMonsters.ContainsKey(item.Name))
+                else if (craftingSprites.ContainsKey(reverseItem))
                 {
-                    monsterCheck = true;
-                    category = "monster-slayer";
-                    reverseItem = reverseFormat(translateMonsters[item.Name]);
+                    category = "crafting";
+                    if (item.Name == "Spring Seeds") cachedCrafting.Add("Wild Seeds Sp");
+                    else if (item.Name == "Summer Seeds") cachedCrafting.Add("Wild Seeds Su");
+                    else if (item.Name == "Fall Seeds") cachedCrafting.Add("Wild Seeds Fa");
+                    else if (item.Name == "Winter Seeds") cachedCrafting.Add("Wild Seeds Wi");
+                    else cachedCrafting.Add(item.Name);
                 }
 
 
-                if (mineralCheck || artifactCheck || fishCheck || milestoneCheck || fieldOfficeCheck || craftingCheck || cookingCheck || bookCheck || monsterCheck)
+                if (mineralCheck || artifactCheck || fishCheck || milestoneCheck || fieldOfficeCheck || bookCheck)
                 {
-                    var tempIndex = history.events.IndexOf(reverseItem);
-                    if (tempIndex == -1 || history.categories[tempIndex] != category) historyCheck = true;
+                        var tempIndexes = Enumerable.Range(0, history.events.Count)
+                        .Where(i => history.events[i] == reverseItem)
+                        .ToList();
+                        var tempIt = 0;
+                        var tempCheck = false;
+                        while (tempIt < tempIndexes.Count)
+                        {
+                            if (history.categories[tempIndexes[tempIt]] == category) tempCheck = true;
+                            tempIt++;
+                        }
+                        if (!tempCheck) historyCheck = true;
                 }
 
 
@@ -1495,26 +1541,12 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Mineral " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Mineral " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Mineral " + item.Name + " has been added to your collection!");
                 }
                 else if (artifactCheck && historyCheck)
                 {
                     outsideInfo.indexes[1] += 1;
-
-                    if(item.Name == "Dwarf Scroll I")
-                    {
-                        reverseItem = "dwarf-scroll-I";
-                    }else if(item.Name == "Dwarf Scroll II")
-                    {
-                        reverseItem = "dwarf-scroll-II";
-                    }else if(item.Name == "Dwarf Scroll III")
-                    {
-                        reverseItem = "dwarf-scroll-III";
-                    }else if(item.Name == "Dwarf Scroll IV")
-                    {
-                        reverseItem = "dwarf-scroll-IV";
-                    }
 
                     eventData.id.Add(generateID());
                     eventData.runIndex.Add(outsideInfo.indexes[1]);
@@ -1527,7 +1559,7 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Artifact " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Artifact " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Artifact " + item.Name + " has been added to your collection!");
                 }
                 else if (fishCheck && historyCheck && checkCrabPot(item.Name))
@@ -1545,7 +1577,7 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Fish " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Fish " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Fish " + item.Name + " has been added to your collection!");
                 }
                 else if (milestoneCheck && historyCheck)
@@ -1558,7 +1590,6 @@ namespace StardewValleyDataManagement
                         var tempDescription = item.getDescription().Split("(");
                         var numChar = tempDescription[1][0];
                         newItem = "Rarecrow " + numChar;
-                        reverseItem = reverseFormat(newItem);
                     }
 
 
@@ -1573,7 +1604,7 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestone " + newItem + " has been added completed!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + newItem + " has been added completed!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Milestone " + newItem + " has been completed!");
                 }
                 else if (fieldOfficeCheck && historyCheck)
@@ -1591,12 +1622,12 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Island Field Office Artifact " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Island Field Office Artifact " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Island Field Office Artifact " + item.Name + " has been added to your collection!");
                 }
-                else if(monsterCheck && historyCheck)
+                else if (bookCheck && historyCheck)
                 {
-                    var newItem = translateMonsters[item.Name];
+                    var newItem = item.DisplayName;
 
                     outsideInfo.indexes[1] += 1;
 
@@ -1605,16 +1636,15 @@ namespace StardewValleyDataManagement
                     eventData.category.Add(category);
                     eventData.categorySprite.Add(categorySprites[category]);
                     eventData.lastEvent.Add(reverseItem);
-                    eventData.itemSprite.Add(monsterSprites[reverseItem]);
+                    eventData.itemSprite.Add(bookSprites[reverseItem]);
                     eventData.description.Add(FormatDescription(category, newItem));
                     eventData.date.Add(date);
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Monster Slayer " + newItem + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                    Monitor.Log("Monster Slayer " + newItem + " has been added to your collection!");
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Book " + newItem + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Book " + newItem + " has been added to your collection!");
                 }
-
             }
 
             // quantity changed and removed are mutually exclusive
@@ -1622,12 +1652,93 @@ namespace StardewValleyDataManagement
             {
                 var item = itemStackSizeChange.Item.Name;
                 var reverseItem = reverseFormat(itemStackSizeChange.Item.Name);
-                if(!chestFlag && shippedFlag && shippedSprites.ContainsKey(reverseItem))
+
+                if (itemStackSizeChange.Item.ItemId == "DriedFruit")
+                {
+                    item = "Dried Fruit";
+                    reverseItem = "dried-fruit";
+                }
+                else if (itemStackSizeChange.Item.ItemId == "DriedMushrooms")
+                {
+                    item = "Dried Mushrooms";
+                    reverseItem = "dried-mushrooms";
+                }else if(itemStackSizeChange.Item.ItemId == "SmokedFish")
+                {
+                    item = "Smoked Fish";
+                    reverseItem = "smoked-fish";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Roe") && !itemStackSizeChange.Item.Name.Contains("Aged"))
+                {
+                    item = "Roe";
+                    reverseItem = "roe";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Roe") && itemStackSizeChange.Item.Name.Contains("Aged"))
+                {
+                    item = "Aged Roe";
+                    reverseItem = "aged-roe";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Wine"))
+                {
+                    item = "Wine";
+                    reverseItem = "wine";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Juice"))
+                {
+                    item = "Juice";
+                    reverseItem = "juice";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Jelly"))
+                {
+                    item = "Jelly";
+                    reverseItem = "jelly";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Pickles"))
+                {
+                    item = "Pickles";
+                    reverseItem = "pickles";
+                }
+                else if (itemStackSizeChange.Item.Name.Contains("Honey"))
+                {
+                    item = "Honey";
+                    reverseItem = "honey";
+                }
+                else if (itemStackSizeChange.Item.ItemId == "174")
+                {
+                    item = "Large Egg White";
+                    reverseItem = "large-egg-white";
+                }
+                else if (itemStackSizeChange.Item.ItemId == "176")
+                {
+                    item = "Egg White";
+                    reverseItem = "egg-white";
+                }
+                else if (itemStackSizeChange.Item.ItemId == "180")
+                {
+                    item = "Egg Brown";
+                    reverseItem = "egg-brown";
+                }
+                else if (itemStackSizeChange.Item.ItemId == "182")
+                {
+                    item = "Large Egg Brown";
+                    reverseItem = "large-egg-brown";
+                }
+
+
+                if (!chestFlag && shippedFlag && shippedSprites.ContainsKey(reverseItem))
                 {
                     var historyCheck = false;
                     var category = "shipped";
-                    var tempIndex = history.events.IndexOf(reverseItem);
-                    if (tempIndex == -1 || history.categories[tempIndex] != "shipped") historyCheck = true;
+                    var tempIndexes = Enumerable.Range(0, history.events.Count)
+                        .Where(i => history.events[i] == reverseItem)
+                        .ToList();
+                    var tempIt = 0;
+                    var tempCheck = false;
+                    while (tempIt < tempIndexes.Count)
+                    {
+                        if (history.categories[tempIndexes[tempIt]] == category) tempCheck = true;
+                        tempIt++;
+                    }
+                    if (!tempCheck) historyCheck = true;
 
                     if (historyCheck)
                     {
@@ -1644,11 +1755,11 @@ namespace StardewValleyDataManagement
                         history.categories.Add(category);
                         history.events.Add(reverseItem);
 
-                        StardewValley.Game1.chatBox.addMessage("[SDVM]: Shipped " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                        StardewValley.Game1.chatBox.addMessage("[SVDM]: Shipped " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
                         Monitor.Log("Shipped " + item + " has been added to your collection!");
                     }
                 }
-                else if (bundleFlag)
+                else if (bundleFlag && !bundleQueue.Contains(item))
                 {
                     bundleQueue.Add(item);
                 }
@@ -1657,13 +1768,95 @@ namespace StardewValleyDataManagement
             // same applies
             foreach(StardewValley.Item item in e.Removed)
             {
+                var newItem = item.Name;
                 var reverseItem = reverseFormat(item.Name);
+
+                if (item.ItemId == "DriedFruit")
+                {
+                    newItem = "Dried Fruit";
+                    reverseItem = "dried-fruit";
+                }
+                else if (item.ItemId == "DriedMushrooms")
+                {
+                    newItem = "Dried Mushrooms";
+                    reverseItem = "dried-mushrooms";
+                }
+                else if (item.ItemId == "SmokedFish")
+                {
+                    newItem = "Smoked Fish";
+                    reverseItem = "smoked-fish";
+                }
+                else if (item.Name.Contains("Roe") && !item.Name.Contains("Aged"))
+                {
+                    newItem = "Roe";
+                    reverseItem = "roe";
+                }
+                else if (item.Name.Contains("Roe") && item.Name.Contains("Aged"))
+                {
+                    newItem = "Aged Roe";
+                    reverseItem = "aged-roe";
+                }
+                else if (item.Name.Contains("Wine"))
+                {
+                    newItem = "Wine";
+                    reverseItem = "wine";
+                }
+                else if (item.Name.Contains("Juice"))
+                {
+                    newItem = "Juice";
+                    reverseItem = "juice";
+                }
+                else if (item.Name.Contains("Jelly"))
+                {
+                    newItem = "Jelly";
+                    reverseItem = "jelly";
+                }
+                else if (item.Name.Contains("Pickles"))
+                {
+                    newItem = "Pickles";
+                    reverseItem = "pickles";
+                }
+                else if (item.Name.Contains("Honey"))
+                {
+                    newItem = "Honey";
+                    reverseItem = "honey";
+                }
+                else if (item.ItemId == "174")
+                {
+                    newItem = "Large Egg White";
+                    reverseItem = "large-egg-white";
+                }
+                else if (item.ItemId == "176")
+                {
+                    newItem = "Egg White";
+                    reverseItem = "egg-white";
+                }
+                else if (item.ItemId == "180")
+                {
+                    newItem = "Egg Brown";
+                    reverseItem = "egg-brown";
+                }
+                else if (item.ItemId == "182")
+                {
+                    newItem = "Large Egg Brown";
+                    reverseItem = "large-egg-brown";
+                }
+
                 if (!chestFlag && shippedFlag && shippedSprites.ContainsKey(reverseItem))
                 {
                     var historyCheck = false;
                     var category = "shipped";
-                    var tempIndex = history.events.IndexOf(reverseItem);
-                    if (tempIndex == -1 || history.categories[tempIndex] != "shipped") historyCheck = true;
+                    var tempIndexes = Enumerable.Range(0, history.events.Count)
+                        .Where(i => history.events[i] == reverseItem)
+                        .ToList();
+                    var tempIt = 0;
+                    var tempCheck = false;
+                    while (tempIt < tempIndexes.Count)
+                    {
+                        if (history.categories[tempIndexes[tempIt]] == category) tempCheck = true;
+                        tempIt++;
+                    }
+                    if (!tempCheck) historyCheck = true;
 
                     if (historyCheck)
                     {
@@ -1675,28 +1868,28 @@ namespace StardewValleyDataManagement
                         eventData.categorySprite.Add(categorySprites[category]);
                         eventData.lastEvent.Add(reverseItem);
                         eventData.itemSprite.Add(shippedSprites[reverseItem]);
-                        eventData.description.Add(FormatDescription(category, item.Name));
+                        eventData.description.Add(FormatDescription(category, newItem));
                         eventData.date.Add(date);
                         history.categories.Add(category);
                         history.events.Add(reverseItem);
 
-                        StardewValley.Game1.chatBox.addMessage("[SDVM]: Shipped " + item.Name + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                        Monitor.Log("Shipped " + item.Name + " has been added to your collection!");
+                        StardewValley.Game1.chatBox.addMessage("[SVDM]: Shipped " + newItem + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                        Monitor.Log("Shipped " + newItem + " has been added to your collection!");
                     }
                 }
-                //else if (bundleFlag)
-                //{
-                //    bundleQueue.Add(item.Name);
-                //}
+                else if (bundleFlag && !bundleQueue.Contains(newItem))
+                {
+                    bundleQueue.Add(newItem);
+                }
             }
         }
 
-        private void ChestInventoryChanged(object? send, ChestInventoryChangedEventArgs e)
+        private void ChestInventoryChanged(object? sender, ChestInventoryChangedEventArgs e)
         {
             chestFlag = true;
         }
 
-        private void LevelChanged(object? send, LevelChangedEventArgs e)
+        private void LevelChanged(object? sender, LevelChangedEventArgs e)
         {
             outsideInfo.indexes[1] += 1;
             var lastEvent = "";
@@ -1713,29 +1906,36 @@ namespace StardewValleyDataManagement
             else if (e.Skill == StardewModdingAPI.Enums.SkillType.Combat) lastEvent = "combat";
 
             eventData.lastEvent.Add(lastEvent);
-            eventData.categorySprite.Add("https://stardewcommunitywiki.com/mediawiki/images/a/a9/Energy.png");
+            eventData.categorySprite.Add("https://stardewvalleywiki.com/mediawiki/images/d/df/Mastery_Icon.png");
             eventData.itemSprite.Add(miscSprites[lastEvent]);
             eventData.description.Add(FormatDescription(category, customToUpper(lastEvent)));
             eventData.date.Add(date);
 
             Monitor.Log(customToUpper(lastEvent) + " has leveled up to " + e.NewLevel.ToString());
+            StardewValley.Game1.chatBox.addMessage("[SVDM]: Level Up " + e.NewLevel + " " + customToUpper(lastEvent) + " has been achieved!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+
         }
 
-        private void OneSecondUpdateTicked(object? send, OneSecondUpdateTickedEventArgs e) {
+        private void OneSecondUpdateTicked(object? sender, OneSecondUpdateTickedEventArgs e) {
             if (e.IsMultipleOf(600) && saveLaucnhedFlag)
             {
                 computeFriendship();
                 computeQuestLog();
+                computeSpecialOrders();
                 checkWallet();
                 checkCachedRecipes();
                 checkBundles();
                 checkPowers();
                 checkAchievements();
                 checkBagSize();
+                checkStardrops();
+                checkMonsterSlayer();
+                if (money > Game1.player.team.money.Value) checkVaultBundles();
+                money = Game1.player.team.money.Value;
             }
         }
 
-        private void MenuChanged(object? send, MenuChangedEventArgs e)
+        private void MenuChanged(object? sender, MenuChangedEventArgs e)
         {
             string menu = e.NewMenu?.ToString() ?? "Null Menu";
             if(menu == "StardewValley.Menus.ItemGrabMenu")
@@ -1795,14 +1995,16 @@ namespace StardewValleyDataManagement
         private string customToUpper(string subject)
         {
             if (subject == null) return null;
-            if(subject.Length > 1) return char.ToUpper(subject[0]) + subject.Substring(1);
+            if(subject.Length > 1 && subject[0] != '\"') return char.ToUpper(subject[0]) + subject.Substring(1);
+            else if (subject.Length > 1 && subject[0] == '\"') return '\"' + char.ToUpper(subject[1]) + subject.Substring(2);
             return subject.ToUpper();
         }
 
         private string customToLower(string subject)
         {
             if (subject == null) return null;
-            if (subject.Length > 1) return char.ToLower(subject[0]) + subject.Substring(1);
+            if (subject.Length > 1 && subject[0] != '\"') return char.ToLower(subject[0]) + subject.Substring(1);
+            else if(subject.Length > 1 && subject[0] == '\"') return '\"' + char.ToLower(subject[1]) + subject.Substring(2);
             return subject.ToLower();
         }
 
@@ -1845,6 +2047,8 @@ namespace StardewValleyDataManagement
                 ii++;
             }
             runName = result;
+            meta.runName = runName;
+            eventData.runName = runName;
             Monitor.Log("This run's name is now: " + runName);
         }
 
@@ -1859,15 +2063,16 @@ namespace StardewValleyDataManagement
             var tempItem = reverseItem.Split("-");
             while(ii < tempItem.Length)
             {
-                if(ii + 1 == tempItem.Length) item += tempItem[ii];
-                else item += tempItem[ii] + " ";
+                if(ii + 1 == tempItem.Length) item += customToUpper(tempItem[ii]);
+                else item += customToUpper(tempItem[ii]) + " ";
                 ii++;
             }
 
             eventData.id.Add(generateID());
             eventData.runIndex.Add(outsideInfo.indexes[1]);
             eventData.category.Add(category);
-            eventData.categorySprite.Add(categorySprites[category]);
+            if (category.Contains("bundle")) eventData.categorySprite.Add(bundleCheck(category));
+            else eventData.categorySprite.Add(categorySprites[category]);
             eventData.lastEvent.Add(reverseItem);
             eventData.itemSprite.Add(getManualEventSprite(category,reverseItem));
             eventData.description.Add(FormatDescription(category, item));
@@ -1875,17 +2080,25 @@ namespace StardewValleyDataManagement
             history.categories.Add(category);
             history.events.Add(reverseItem);
 
-            StardewValley.Game1.chatBox.addMessage("[SDVM]: Manual Add " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
-            Monitor.Log("Manual Add " + item + " has been added to your collection! (10 Second Tick)");
+            StardewValley.Game1.chatBox.addMessage("[SVDM]: Manual Add " + item + " has been added to your collection!", new Microsoft.Xna.Framework.Color(255, 255, 255));
+            Monitor.Log("Manual Add " + item + " has been added to your collection!");
         }
 
         private void ccHelp(string command, string[] args)
         {
-            if (args.Length == 0) Monitor.Log("Please input a valid argument after the command.");
-            else if (args[0] == "manual") Monitor.Log("The events you have to manually input are iridium snake milk, obelisks, golden clock, stardrop, and magma sprite");
+            if (args.Length == 0) Monitor.Log("The commands for SVDM are addRunName, addEvent, and runFinished. You can get information about these commands with helpMe 'command'.");
+            else if (args[0] == "addEvent") Monitor.Log("The command struc for addEvent is: addEvent category event season day year.");
+            else if (args[0] == "addRunName") Monitor.Log("The command structure for addRunName is: addRunName 'name'. All characters (including spaces) are allowed.");
+            else if (args[0] == "runFinished") Monitor.Log("Simply type runFinished to change the MetaData status to Completed.");
             else Monitor.Log("Please input a valid argument after the command.");
         }
-         
+
+        private void ccFinished(string command, string[] args)
+        {
+            meta.status = "Completed";
+            Monitor.Log("This run has been marked as complete");
+        }
+
         private void testingMethod()
         {
 
@@ -1895,7 +2108,21 @@ namespace StardewValleyDataManagement
         {
             foreach (var val in StardewValley.Game1.player.questLog)
             {
-                quests.Add(val.id.Value);
+                if (questSprites.Keys.Contains(reverseFormat(val.GetName())) && val.GetName() != "The Mysterious Qi")
+                {
+                    quests.Add(val.id.Value);
+                }
+            }
+        }
+
+        private void initSpecialOrders()
+        {
+            foreach (var val in StardewValley.Game1.player.team.specialOrders)
+            {
+                if (questSprites.Keys.Contains(reverseFormat(val.GetName())))
+                {
+                    specialOrders.Add(val.GetName());
+                }
             }
         }
 
@@ -1905,17 +2132,20 @@ namespace StardewValleyDataManagement
 
             foreach (var val in StardewValley.Game1.player.questLog)
             {
-                tempQuests.Add(val.id.Value);
+                if (questSprites.Keys.Contains(reverseFormat(val.GetName().Replace("\"",""))) && val.GetName() != "The Mysterious Qi")
+                {
+                    tempQuests.Add(val.id.Value);
+                }
             }
 
             var ii = 0;
             while (ii < quests.Count)
             {
-                if (!tempQuests.Contains(quests[ii]) && (!history.events.Contains(reverseFormat(StardewValley.Quests.Quest.getQuestFromId(quests[ii]).GetName()))))
+                var quest = StardewValley.Quests.Quest.getQuestFromId(quests[ii]).GetName().Replace("\"", "");
+                if (!tempQuests.Contains(quests[ii]) && (!history.events.Contains(reverseFormat(quest))))
                 {
                     //add quests to event
                     outsideInfo.indexes[1] += 1;
-                    var quest = StardewValley.Quests.Quest.getQuestFromId(quests[ii]).GetName();
 
                     eventData.id.Add(generateID());
                     eventData.runIndex.Add(outsideInfo.indexes[1]);
@@ -1923,15 +2153,37 @@ namespace StardewValleyDataManagement
                     eventData.lastEvent.Add(reverseFormat(quest));
                     eventData.itemSprite.Add(questSprites[reverseFormat(quest)]);
                     eventData.categorySprite.Add(categorySprites["quest"]);
-                    eventData.description.Add(FormatDescription(quest, "quest"));
+                    eventData.description.Add(FormatDescription("Quest",quest));
                     eventData.date.Add(date);
 
                     history.events.Add(reverseFormat(quest));
                     history.categories.Add("quest");
                     quests.Remove(quests[ii]);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Quest " + quest + " has been marked as complete! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest " + quest + " has been marked as complete! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Quest " + quest + " has been marked as complete! (10 Second Update Tick)");
+
+                    if(quest == "Cryptic Note")
+                    {
+                        outsideInfo.indexes[1] += 1;
+                        var item = "Iridium Snake Milk";
+                        var reverseItem = "iridium-snake-milk";
+
+                        eventData.id.Add(generateID());
+                        eventData.runIndex.Add(outsideInfo.indexes[1]);
+                        eventData.category.Add("milestone");
+                        eventData.lastEvent.Add(reverseItem);
+                        eventData.itemSprite.Add(miscSprites[reverseItem]);
+                        eventData.categorySprite.Add(categorySprites["milestone"]);
+                        eventData.description.Add(FormatDescription("Milestone", item));
+                        eventData.date.Add(date);
+
+                        history.events.Add(reverseItem);
+                        history.categories.Add("milestone");
+
+                        StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + item + " has been marked as complete! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                        Monitor.Log("Milestone " + item + " has been marked as complete! (10 Second Update Tick)");
+                    }
                 }
                 ii++;
             }
@@ -1939,18 +2191,74 @@ namespace StardewValleyDataManagement
             var jj = 0;
             while(jj < tempQuests.Count)
             {
-                if (!quests.Contains(tempQuests[jj]) && questSprites.ContainsKey(reverseFormat(tempQuests[jj])))
+                var quest = StardewValley.Quests.Quest.getQuestFromId(tempQuests[jj]).GetName().Replace("\"", "");
+
+                if (!quests.Contains(tempQuests[jj]) && questSprites.ContainsKey(reverseFormat(quest)))
                 {
                     quests.Add(tempQuests[jj]);
 
-                    var quest = StardewValley.Quests.Quest.getQuestFromId(tempQuests[jj]);
-
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Quest " + quest.GetName() + " has been added to your quest log! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                    Monitor.Log("Quest " + quest.GetName() + " has been added to your quest log! (10 Second Update Tick)");
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest " + quest + " has been added to your quest log! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Quest " + quest + " has been added to your quest log! (10 Second Update Tick)");
                 }
                 jj++;
             }
 
+        }
+
+        private void computeSpecialOrders()
+        {
+            List<string> tempQuests = new List<string>();
+
+            foreach (var val in StardewValley.Game1.player.team.specialOrders)
+            {
+                if (questSprites.Keys.Contains(reverseFormat(val.GetName())))
+                {
+                    tempQuests.Add(val.GetName());
+                }
+            }
+
+            var ii = 0;
+            while (ii < specialOrders.Count)
+            {
+                var quest = specialOrders[ii];
+                if (!tempQuests.Contains(specialOrders[ii]) && (!history.events.Contains(reverseFormat(quest))))
+                {
+                    //add quests to event
+                    outsideInfo.indexes[1] += 1;
+
+                    eventData.id.Add(generateID());
+                    eventData.runIndex.Add(outsideInfo.indexes[1]);
+                    eventData.category.Add("quest");
+                    eventData.lastEvent.Add(reverseFormat(quest));
+                    eventData.itemSprite.Add(questSprites[reverseFormat(quest)]);
+                    eventData.categorySprite.Add(categorySprites["quest"]);
+                    eventData.description.Add(FormatDescription("Quest",quest));
+                    eventData.date.Add(date);
+
+                    history.events.Add(reverseFormat(quest));
+                    history.categories.Add("quest");
+                    specialOrders.Remove(specialOrders[ii]);
+
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest " + quest + " has been marked as complete! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Quest " + quest + " has been marked as complete! (10 Second Update Tick)");
+                }
+                ii++;
+            }
+
+            var jj = 0;
+            while (jj < tempQuests.Count)
+            {
+                var quest = tempQuests[jj];
+
+                if (!specialOrders.Contains(tempQuests[jj]) && questSprites.ContainsKey(reverseFormat(quest)))
+                {
+                    specialOrders.Add(tempQuests[jj]);
+
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest " + quest + " has been added to your quest log! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Quest " + quest + " has been added to your quest log! (10 Second Update Tick)");
+                }
+                jj++;
+            }
         }
 
         private void checkWallet()
@@ -1975,7 +2283,19 @@ namespace StardewValleyDataManagement
 
             while(ii < walletSprites.Count)
             {
-                if (flags[ii] && !history.events.Contains(keys[ii]))
+                var historyCheck = false;
+                var tempIndexes = Enumerable.Range(0, history.events.Count)
+                .Where(i => history.events[i] == keys[ii])
+                .ToList();
+                var tempIt = 0;
+                var tempCheck = false;
+                while (tempIt < tempIndexes.Count)
+                {
+                    if (history.categories[tempIndexes[tempIt]] == "wallet") tempCheck = true;
+                    tempIt++;
+                }
+                if (!tempCheck) historyCheck = true;
+                if (flags[ii] && historyCheck)
                 {
                     outsideInfo.indexes[1] += 1;
 
@@ -2008,8 +2328,31 @@ namespace StardewValleyDataManagement
                     history.categories.Add("wallet");
                     history.events.Add(keys[ii]);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Wallet " + keys[ii] + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                    Monitor.Log("Quest " + keys[ii] + " has been added to your collection! (10 Second Update Tick");
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Wallet " + finalEvent + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Wallet " + finalEvent + " has been added to your collection! (10 Second Update Tick");
+
+                    if(ii == 2)
+                    {
+                        outsideInfo.indexes[1] += 1;
+
+                        eventData.id.Add(generateID());
+                        eventData.runIndex.Add(outsideInfo.indexes[1]);
+                        eventData.category.Add("quests");
+                        eventData.lastEvent.Add("the-mysterious-qi");
+                        eventData.categorySprite.Add(categorySprites["quests"]);
+                        eventData.itemSprite.Add(questSprites["the-mysterious-qi"]);
+
+                        finalEvent = "The Mysterious Qi";
+
+                        eventData.description.Add(FormatDescription("quest", finalEvent));
+                        eventData.date.Add(date);
+
+                        history.categories.Add("quests");
+                        history.events.Add(keys[ii]);
+
+                        StardewValley.Game1.chatBox.addMessage("[SVDM]: Quest " + finalEvent + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                        Monitor.Log("Quest " + finalEvent + " has been added to your collection! (10 Second Update Tick");
+                    }
                 }
                 ii++;
             }
@@ -2021,8 +2364,8 @@ namespace StardewValleyDataManagement
 
             foreach(string key in keys)
             {
-                friendshipLevel.Add(StardewValley.Game1.player.getFriendshipLevelForNPC(key));
-                friendshipHearts.Add(StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key));
+                friendshipLevel.Add(StardewValley.Game1.player.getFriendshipLevelForNPC(customToUpper(key)));
+                friendshipHearts.Add(StardewValley.Game1.player.getFriendshipHeartLevelForNPC(customToUpper(key)));
             }
         }
 
@@ -2033,7 +2376,8 @@ namespace StardewValleyDataManagement
             var ii = 0;
             foreach (string key in keys)
             {
-                if (friendshipLevel[ii] == 0 && StardewValley.Game1.player.getFriendshipLevelForNPC(key) != 0 && key != "Robin" && key != "Lewis")
+                var upperKey = customToUpper(key);
+                if (friendshipLevel[ii] == 0 && StardewValley.Game1.player.getFriendshipLevelForNPC(upperKey) != 0 && upperKey != "Robin" && upperKey != "Lewis")
                 {
                     //friendship-0 for key and update
                     outsideInfo.indexes[1] += 1;
@@ -2045,18 +2389,18 @@ namespace StardewValleyDataManagement
                     eventData.lastEvent.Add(reverseEvent);
                     eventData.categorySprite.Add(categorySprites["friendship"]);
                     eventData.itemSprite.Add(characterSprites[reverseEvent]);
-                    eventData.description.Add(FormatDescription("friendship-0", key));
+                    eventData.description.Add(FormatDescription("friendship-0", upperKey));
                     eventData.date.Add(date);
 
                     history.categories.Add("friendship-0");
                     history.events.Add(reverseEvent);
-                    friendshipLevel[ii] = StardewValley.Game1.player.getFriendshipLevelForNPC(key);
+                    friendshipLevel[ii] = StardewValley.Game1.player.getFriendshipLevelForNPC(upperKey);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Friendship 0 " + key + " has been achieved! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                    Monitor.Log("Friendship 0 " + key + " has been achieved! (10 Second Update Tick)");
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Friendship 0 " + upperKey + " has been achieved! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Friendship 0 " + upperKey + " has been achieved! (10 Second Update Tick)");
 
                 }
-                if(friendshipHearts[ii] != StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key))
+                while(friendshipHearts[ii] != StardewValley.Game1.player.getFriendshipHeartLevelForNPC(upperKey))
                 {
                     //add event for that level of hearts and update
                     outsideInfo.indexes[1] += 1;
@@ -2064,19 +2408,19 @@ namespace StardewValleyDataManagement
 
                     eventData.id.Add(generateID());
                     eventData.runIndex.Add(outsideInfo.indexes[1]);
-                    eventData.category.Add("friendship-" + StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key).ToString());
+                    eventData.category.Add("friendship-" + (friendshipHearts[ii] + 1).ToString());
                     eventData.lastEvent.Add(reverseEvent);
                     eventData.categorySprite.Add(categorySprites["friendship"]);
                     eventData.itemSprite.Add(characterSprites[reverseEvent]);
-                    eventData.description.Add(FormatDescription("friendship-" + StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key).ToString(), key));
+                    eventData.description.Add(FormatDescription("friendship-" + (friendshipHearts[ii] + 1).ToString(), upperKey));
                     eventData.date.Add(date);
 
-                    history.categories.Add("friendship-" + StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key).ToString());
+                    history.categories.Add("friendship-" + (friendshipHearts[ii] + 1).ToString());
                     history.events.Add(reverseEvent);
-                    friendshipHearts[ii] = StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key);
+                    friendshipHearts[ii] ++;
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Friendship " + StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key).ToString() + " " + key + " has been achieved! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
-                    Monitor.Log("Friendship " + StardewValley.Game1.player.getFriendshipHeartLevelForNPC(key).ToString() + " " + key + " has been achieved! (10 Second Update Tick)");
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Friendship " + (friendshipHearts[ii]).ToString() + " " + upperKey + " has been achieved! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    Monitor.Log("Friendship " + (friendshipHearts[ii]).ToString() + " " + upperKey + " has been achieved! (10 Second Update Tick)");
                 }
                 ii += 1;
             }
@@ -2094,7 +2438,20 @@ namespace StardewValleyDataManagement
                     {
                         foreach (var val2 in val)
                         {
-                            if (val2.Key == cook && val2.Value > 0)
+                            var tempIndex = history.events.IndexOf(reverseItem);
+                            var historyCheck = false;
+                            var tempIndexes = Enumerable.Range(0, history.events.Count)
+                                .Where(i => history.events[i] == reverseItem)
+                                .ToList();
+                            var tempIt = 0;
+                            var tempCheck = false;
+                            while (tempIt < tempIndexes.Count)
+                            {
+                                if (history.categories[tempIndexes[tempIt]] == "cooking") tempCheck = true;
+                                tempIt++;
+                            }
+                            if (!tempCheck) historyCheck = true;
+                            if (val2.Key == cook && historyCheck)
                             {
                                 outsideInfo.indexes[1] += 1;
                                 var category = "cooking";
@@ -2110,7 +2467,7 @@ namespace StardewValleyDataManagement
                                 history.categories.Add(category);
                                 history.events.Add(reverseItem);
 
-                                StardewValley.Game1.chatBox.addMessage("[SDVM]: Dish " + cook + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                                StardewValley.Game1.chatBox.addMessage("[SVDM]: Dish " + cook + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                                 Monitor.Log("Dish " + cook + " has been added to your collection! (10 Second Update Tick)");
                             }
                         }
@@ -2128,7 +2485,20 @@ namespace StardewValleyDataManagement
                     {
                         foreach (var val2 in val)
                         {
-                            if (val2.Key == craft && val2.Value > 0)
+                            var tempIndex = history.events.IndexOf(reverseItem);
+                            var historyCheck = false;
+                            var tempIndexes = Enumerable.Range(0, history.events.Count)
+                                .Where(i => history.events[i] == reverseItem)
+                                   .ToList();
+                            var tempIt = 0;
+                            var tempCheck = false;
+                            while (tempIt < tempIndexes.Count)
+                            {
+                                if (history.categories[tempIndexes[tempIt]] == "crafting") tempCheck = true;
+                                tempIt++;
+                            }
+                            if (!tempCheck) historyCheck = true;
+                            if (val2.Key == craft && val2.Value > 0 && historyCheck)
                             {
                                 outsideInfo.indexes[1] += 1;
                                 var category = "crafting";
@@ -2144,7 +2514,7 @@ namespace StardewValleyDataManagement
                                 history.categories.Add(category);
                                 history.events.Add(reverseItem);
 
-                                StardewValley.Game1.chatBox.addMessage("[SDVM]: Crafting " + craft + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                                StardewValley.Game1.chatBox.addMessage("[SVDM]: Crafting " + craft + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                                 Monitor.Log("Crafting " + craft + " has been added to your collection! (10 Second Update Tick)");
                             }
                         }
@@ -2197,6 +2567,12 @@ namespace StardewValleyDataManagement
                 }
                 cc++;
             }
+
+            if (bundleData.flags[0].Count / 3 != bundleData.items[0].Count)
+            {
+                bundleData.flags.Reverse();
+                reverseFlags = true;
+            }
         }
 
         private string bundleCheck(string bundle)
@@ -2221,9 +2597,7 @@ namespace StardewValleyDataManagement
 
         private void checkBundles()
         {
-            var bundleCount = 0;
-
-            while(bundleCount < bundleQueue.Count)
+            while(bundleQueue.Count > 0)
             {
 
                 var bb = 0;
@@ -2231,7 +2605,7 @@ namespace StardewValleyDataManagement
                 var bundleIndex = 0;
                 List<List<bool>> test = new List<List<bool>>();
                 var checkFlag = false;
-                var item = bundleQueue[bundleCount];
+                var item = bundleQueue[0];
                 var reverseItem = reverseFormat(item);
 
                 var zz = 0;
@@ -2245,11 +2619,13 @@ namespace StardewValleyDataManagement
                     zz++;
                 }
 
-                while (bb < test.Count && bb < bundleData.flags.Count)
+                if (reverseFlags) test.Reverse();
+
+                while (bb < test.Count && bb < bundleData.flags.Count && !checkFlag)
                 {
-                    while (cc < test[bb].Count && cc < bundleData.flags[bb].Count)
+                    while (cc < test[bb].Count && cc < bundleData.flags[bb].Count && !checkFlag)
                     {
-                        if (test[bb][cc] != bundleData.flags[bb][cc])
+                        if ((test[bb][cc] != bundleData.flags[bb][cc]) && bundleData.items[bb].Contains(reverseItem))
                         {
                             checkFlag = true;
                             bundleIndex = bb;
@@ -2260,7 +2636,6 @@ namespace StardewValleyDataManagement
                     cc = 0;
                     bb++;
                 }
-
 
                 if (checkFlag)
                 {
@@ -2285,24 +2660,6 @@ namespace StardewValleyDataManagement
                         }
                     }
 
-                    if (category == "animal-bundle" && reverseItem == "large-egg")
-                    {
-                        var historyCheck = false;
-                        var tempIndex = history.events.IndexOf("large-egg-white");
-                        if (tempIndex == -1 || history.categories[tempIndex] != category) historyCheck = true;
-
-                        if (historyCheck)
-                        {
-                            item = "Large Egg White";
-                            reverseItem = "large-egg-white";
-                        }
-                        else
-                        {
-                            item = "Large Egg Brown";
-                            reverseItem = "large-egg-brown";
-                        }
-                    }
-
                     eventData.id.Add(generateID());
                     eventData.runIndex.Add(outsideInfo.indexes[1]);
                     eventData.category.Add(category);
@@ -2314,12 +2671,14 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: " + bundleData.name[bundleIndex] + " Bundle " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: " + bundleData.name[bundleIndex] + " Bundle " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log(bundleData.name[bundleIndex] + " Bundle " + item + " has been added to your collection! (10 Second Tick)");
                 }
-                bundleCount++;
+
+                bundleQueue.Remove(item);
+                if (bundleQueue.Count == 0) bundleData.flags = test;
             }
-            bundleQueue.Clear();
+
         }
 
         private void initPowers()
@@ -2327,19 +2686,19 @@ namespace StardewValleyDataManagement
             //string[] powers = {"farming-mastery", "mining-mastery", "foraging-mastery", "fishing-mastery", "combat-mastery" };
 
             var tempIndex = history.events.IndexOf("farming-mastery");
-            if (tempIndex == -1 || history.categories[tempIndex] != "powers") farmingMastery = true;
+            if (tempIndex != -1) farmingMastery = true;
 
             var tempIndex2 = history.events.IndexOf("mining-mastery");
-            if (tempIndex2 == -1 || history.categories[tempIndex2] != "powers") miningMastery = true;
+            if (tempIndex2 != -1) miningMastery = true;
 
             var tempIndex3 = history.events.IndexOf("foraging-mastery");
-            if (tempIndex3 == -1 || history.categories[tempIndex3] != "powers") foragingMastery = true;
+            if (tempIndex3 != -1) foragingMastery = true;
 
             var tempIndex4 = history.events.IndexOf("fishing-mastery");
-            if (tempIndex4 == -1 || history.categories[tempIndex4] != "powers") fishingMastery = true;
+            if (tempIndex4 != -1) fishingMastery = true;
 
             var tempIndex5 = history.events.IndexOf("combat-mastery");
-            if (tempIndex5 == -1 || history.categories[tempIndex5] != "powers") combatMastery = true;
+            if (tempIndex5 != -1) combatMastery = true;
         }
 
         private void checkPowers()
@@ -2372,7 +2731,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Powers " + item + " has been added to your collection! (10 Second Tick)");
 
                 farmingMastery = true;
@@ -2394,7 +2753,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Powers " + item + " has been added to your collection! (10 Second Tick)");
 
                 miningMastery = true;
@@ -2416,7 +2775,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Powers " + item + " has been added to your collection! (10 Second Tick)");
 
                 foragingMastery = true;
@@ -2438,7 +2797,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Powers " + item + " has been added to your collection! (10 Second Tick)");
 
                 fishingMastery = true;
@@ -2460,7 +2819,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Powers " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Powers " + item + " has been added to your collection! (10 Second Tick)");
 
                 combatMastery = true;
@@ -2482,9 +2841,17 @@ namespace StardewValleyDataManagement
                 if (!achievements.Contains(val))
                 {
                     outsideInfo.indexes[1] += 1;
-                    List<string> tempKeys = new List<string>(achievementSprites.Keys);
 
-                    var reverseItem = tempKeys[val];
+                    var tempAchs = Game1.achievements;
+                    var reverseItem = reverseFormat(tempAchs[val].Split("^")[0]).Replace("(","").Replace(")","").Replace("'","");
+
+                    if (reverseItem == "greenhorn-15k") reverseItem = "greenhorn";
+                    else if (reverseItem == "cowpoke-50k") reverseItem = "cowpoke";
+                    else if (reverseItem == "homesteader-250k") reverseItem = "homesteader";
+                    else if (reverseItem == "millionaire-1mil") reverseItem = "millionaire";
+                    else if (reverseItem == "legend-10mil") reverseItem = "legend-achievement";
+                    else if (reverseItem == "d.I.Y.") reverseItem = "do-it-yourself";
+
                     var category = "achievement";
                     var item = "";
 
@@ -2508,7 +2875,7 @@ namespace StardewValleyDataManagement
                     history.categories.Add(category);
                     history.events.Add(reverseItem);
 
-                    StardewValley.Game1.chatBox.addMessage("[SDVM]: Achievement " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                    StardewValley.Game1.chatBox.addMessage("[SVDM]: Achievement " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                     Monitor.Log("Achievement " + item + " has been added to your collection! (10 Second Tick)");
 
                     achievements.Add(val);
@@ -2531,7 +2898,7 @@ namespace StardewValleyDataManagement
                         history.categories.Add(category);
                         history.events.Add(reverseItem);
 
-                        StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                        StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                         Monitor.Log("Milestones " + item + " has been added to your collection! (10 Second Tick)");
                     }
                 }
@@ -2559,7 +2926,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Milestones " + item + " has been added to your collection! (10 Second Tick)");
 
                 bagSize = newSize;
@@ -2582,7 +2949,7 @@ namespace StardewValleyDataManagement
                 history.categories.Add(category);
                 history.events.Add(reverseItem);
 
-                StardewValley.Game1.chatBox.addMessage("[SDVM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestones " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
                 Monitor.Log("Milestones " + item + " has been added to your collection! (10 Second Tick)");
 
                 bagSize = newSize;
@@ -2632,6 +2999,217 @@ namespace StardewValleyDataManagement
             else return "invalid";
         }
 
+        private void checkVaultBundles()
+        {
+            List<List<bool>> test = new List<List<bool>>();
+            var zz = 0;
+            foreach (var val in StardewValley.Game1.netWorldState.Value.Bundles.Values)
+            {
+                test.Add(new List<bool>());
+                foreach (var item2 in val)
+                {
+                    test[zz].Add(item2);
+                }
+                zz++;
+            }
+            if (reverseFlags) test.Reverse();
 
+            var result = new List<int>();
+
+            if (!bundleData.flags[21].SequenceEqual(test[21]))
+            {
+                result.Add(21);
+                bundleData.flags[21] = test[21];
+            }
+            else if (!bundleData.flags[22].SequenceEqual(test[22]))
+            {
+                result.Add(22);
+                bundleData.flags[22] = test[22];
+            }
+            else if (!bundleData.flags[23].SequenceEqual(test[23]))
+            {
+                result.Add(23);
+                bundleData.flags[23] = test[23];
+            }
+            else if (!bundleData.flags[24].SequenceEqual(test[24]))
+            {
+                result.Add(24);
+                bundleData.flags[24] = test[24];
+            }
+
+            var ii = 0;
+            while (ii < result.Count)
+            {
+                outsideInfo.indexes[1] += 1;
+                var category = bundleData.name[result[ii]].Replace("'", "") + "-bundle";
+                var item = "Gold";
+                var reverseItem = "gold";
+
+                eventData.id.Add(generateID());
+                eventData.runIndex.Add(outsideInfo.indexes[1]);
+                eventData.category.Add(category);
+                eventData.categorySprite.Add(bundleCheck(category));
+                eventData.lastEvent.Add(reverseItem);
+                eventData.itemSprite.Add(bundleSprites[reverseItem]);
+                eventData.description.Add(FormatDescription(category, item));
+                eventData.date.Add(date);
+                history.categories.Add(category);
+                history.events.Add(reverseItem);
+
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: " + bundleData.name[result[ii]] + " Bundle " + item + " has been added to your collection! (10 Second Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                Monitor.Log(bundleData.name[result[ii]] + " Bundle " + item + " has been added to your collection! (10 Second Tick)");
+
+                ii++;
+            }
+        }
+
+        private void checkObelisks()
+        {
+            var buildings = new List<String>();
+            foreach (var val in Game1.getFarm().buildings)
+            {
+                var building = reverseFormat(val.textureName().Split("\\")[1]);
+                if (miscSprites.ContainsKey(building))
+                {
+                    var historyCheck = false;
+                    var tempIndexes = Enumerable.Range(0, history.events.Count)
+                    .Where(i => history.events[i] == building)
+                    .ToList();
+                    var tempIt = 0;
+                    var tempCheck = false;
+                    while (tempIt < tempIndexes.Count)
+                    {
+                        if (history.categories[tempIndexes[tempIt]] == "milestone") tempCheck = true;
+                        tempIt++;
+                    }
+                    if (!tempCheck) historyCheck = true;
+                    if (historyCheck) buildings.Add(val.textureName().Split("\\")[1]);
+                }
+            }
+
+            var ii = 0;
+            while (ii < buildings.Count)
+            {
+                outsideInfo.indexes[1] += 1;
+                var reverseItem = reverseFormat(buildings[ii]);
+
+                eventData.id.Add(generateID());
+                eventData.runIndex.Add(outsideInfo.indexes[1]);
+                eventData.category.Add("milestone");
+                eventData.lastEvent.Add(reverseItem);
+                eventData.categorySprite.Add(categorySprites["milestone"]);
+                eventData.itemSprite.Add(miscSprites[reverseItem]);
+
+                eventData.description.Add(FormatDescription("milestone", buildings[ii]));
+                eventData.date.Add(date);
+
+                history.categories.Add("milestone");
+                history.events.Add(reverseItem);
+
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + buildings[ii] + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                Monitor.Log("Milestone " + buildings[ii] + " has been added to your collection! (10 Second Update Tick");
+
+                ii++;
+            }
+        }
+
+        private void checkStardrops()
+        {
+            var stardrops = new List<string>();
+            foreach(var val in Game1.player.mailReceived)
+            {
+                if (val.Contains("CF_")){
+                    var stardrop = val.Replace("CF_", "Stardrop ");
+                    var historyCheck = false;
+                    var tempIndexes = Enumerable.Range(0, history.events.Count)
+                    .Where(i => history.events[i] == reverseFormat(stardrop))
+                    .ToList();
+                    var tempIt = 0;
+                    var tempCheck = false;
+                    while (tempIt < tempIndexes.Count)
+                    {
+                        if (history.categories[tempIndexes[tempIt]] == "milestone") tempCheck = true;
+                        tempIt++;
+                    }
+                    if (!tempCheck) historyCheck = true;
+                    if (historyCheck) stardrops.Add(stardrop);
+                }
+            }
+
+            var ii = 0;
+            while (ii < stardrops.Count)
+            {
+                outsideInfo.indexes[1] += 1;
+                var reverseItem = reverseFormat(stardrops[ii]);
+
+                eventData.id.Add(generateID());
+                eventData.runIndex.Add(outsideInfo.indexes[1]);
+                eventData.category.Add("milestone");
+                eventData.lastEvent.Add(reverseItem);
+                eventData.categorySprite.Add(categorySprites["milestone"]);
+                eventData.itemSprite.Add(miscSprites["stardrop"]);
+
+                eventData.description.Add(FormatDescription("milestone", stardrops[ii]));
+                eventData.date.Add(date);
+
+                history.categories.Add("milestone");
+                history.events.Add(reverseItem);
+
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Milestone " + stardrops[ii] + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                Monitor.Log("Milestone " + stardrops[ii] + " has been added to your collection! (10 Second Update Tick");
+
+                ii++;
+            }
+        }
+
+        private void checkMonsterSlayer()
+        {
+            var monsters = new List<string>();
+            foreach(var val in Game1.player.mailReceived)
+            {
+                if (val.Contains("Gil_"))
+                {
+                    var monster = translateMonsters[val.Replace("Gil_", "")];
+                    var historyCheck = false;
+                    var tempIndexes = Enumerable.Range(0, history.events.Count)
+                    .Where(i => history.events[i] == reverseFormat(monster))
+                    .ToList();
+                    var tempIt = 0;
+                    var tempCheck = false;
+                    while (tempIt < tempIndexes.Count)
+                    {
+                        if (history.categories[tempIndexes[tempIt]] == "monster-slayer") tempCheck = true;
+                        tempIt++;
+                    }
+                    if (!tempCheck) historyCheck = true;
+                    if (historyCheck) monsters.Add(monster);
+                }
+            }
+
+            var ii = 0;
+            while (ii < monsters.Count)
+            {
+                outsideInfo.indexes[1] += 1;
+                var reverseItem = reverseFormat(monsters[ii]);
+
+                eventData.id.Add(generateID());
+                eventData.runIndex.Add(outsideInfo.indexes[1]);
+                eventData.category.Add("monster-slayer");
+                eventData.lastEvent.Add(reverseItem);
+                eventData.categorySprite.Add(categorySprites["monster-slayer"]);
+                eventData.itemSprite.Add(monsterSprites[reverseItem]);
+
+                eventData.description.Add(FormatDescription("monster-slayer", monsters[ii]));
+                eventData.date.Add(date);
+
+                history.categories.Add("monster-slayer");
+                history.events.Add(reverseItem);
+
+                StardewValley.Game1.chatBox.addMessage("[SVDM]: Monster Slayer " + monsters[ii] + " has been added to your collection! (10 Second Update Tick)", new Microsoft.Xna.Framework.Color(255, 255, 255));
+                Monitor.Log("Monster Slayer " + monsters[ii] + " has been added to your collection! (10 Second Update Tick");
+
+                ii++;
+            }
+        }
     }
 }
