@@ -1294,6 +1294,11 @@ namespace StardewValleyDataManagement
         private void SaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
             this.outsideInfo = this.Helper.Data.ReadJsonFile<OutsideInfo>("OutsideInfo.json") ?? new OutsideInfo();
+            if(outsideInfo.indexes.Count == 0)
+            {
+                this.outsideInfo.indexes.Add(0);
+                this.outsideInfo.indexes.Add(0);
+            }
 
             initQuests();
             initSpecialOrders();
