@@ -1214,14 +1214,18 @@ namespace StardewValleyDataManagement
 
         public override void Entry(IModHelper helper)
         {
-            helper.Events.GameLoop.SaveLoaded += this.SaveLoaded;
-            helper.Events.GameLoop.DayEnding += this.DayEnding;
-            helper.Events.World.ChestInventoryChanged += this.ChestInventoryChanged;
-            helper.Events.Player.InventoryChanged += this.InventoryChanged;
-            helper.Events.GameLoop.DayStarted += this.DayStarted;
-            helper.Events.Player.LevelChanged += this.LevelChanged;
-            helper.Events.GameLoop.OneSecondUpdateTicked += this.OneSecondUpdateTicked;
-            helper.Events.Display.MenuChanged += this.MenuChanged;
+            var model = this.Helper.Data.ReadJsonFile<Approved>("Approved.json") ?? new Approved();
+            if(model.mode == "Enabled")
+            {
+                helper.Events.GameLoop.SaveLoaded += this.SaveLoaded;
+                helper.Events.GameLoop.DayEnding += this.DayEnding;
+                helper.Events.World.ChestInventoryChanged += this.ChestInventoryChanged;
+                helper.Events.Player.InventoryChanged += this.InventoryChanged;
+                helper.Events.GameLoop.DayStarted += this.DayStarted;
+                helper.Events.Player.LevelChanged += this.LevelChanged;
+                helper.Events.GameLoop.OneSecondUpdateTicked += this.OneSecondUpdateTicked;
+                helper.Events.Display.MenuChanged += this.MenuChanged;
+            }
         }
 
         private void DayStarted(object? sender, DayStartedEventArgs e) {
@@ -1314,7 +1318,7 @@ namespace StardewValleyDataManagement
 
                 model.farmerNames.Add(StardewValley.Game1.player.Name);
                 model.farmNames.Add(StardewValley.Game1.player.farmName.Value);
-                this.Helper.Data.WriteJsonFile("approved.json", model);
+                this.Helper.Data.WriteJsonFile("Approved.json", model);
 
                 StardewValley.Game1.chatBox.addMessage("[SVDM]: Welcome to the valley, " + StardewValley.Game1.player.Name + "! Use addRunName 'name' in the SMAPI console to begin tracking your run :3", new Microsoft.Xna.Framework.Color(255, 255, 255));
 

@@ -11,9 +11,12 @@ namespace StardewValleyDataManagement
         public Approved() { 
             this.farmerNames = new List<string>();
             this.farmNames = new List<string>();
+            this.mode = "Enabled";
         }
 
         public List<String> farmerNames { get; set; }
         public List<String> farmNames { get; set; }
+
+        public string mode { get; set; }
     }
 }
